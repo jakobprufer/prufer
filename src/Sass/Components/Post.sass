@@ -1,0 +1,47 @@
+.post
+    cursor: pointer
+    // padding: 8px
+    position: relative
+    // background: #f6f6f6
+
+    &:hover
+        opacity: 95%
+
+.postHead
+    margin-bottom: 16px
+    display: flex
+    flex-direction: column
+    gap: 2px
+
+// temp
+.overlayTitle
+    position: absolute
+    top: 0
+    left: 0
+    color: $background
+    // filter: drop-shadow(5px 5px 10px #00000091)
+    margin-left: 16px
+
+.infoOverlay
+    position: absolute
+    top: 0
+    left: 0
+    color: $font
+    // filter: drop-shadow(5px 5px 10px #00000091)
+    padding: 16px
+    width: 100%
+    height: 100%
+    flex-direction: column
+    justify-content: flex-end
+    background: #e9e9e9e3
+    // backdrop-filter: blur(1px)
+    display: flex
+    opacity: 0
+    border: 1px solid black
+
+.post:hover .infoOverlay
+    opacity: 1
+
+.overlayTitle .subtitle
+    background: $background
+    color: $font

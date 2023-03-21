@@ -1,0 +1,64 @@
+.header
+    // margin-top: 16px
+    padding: 32px 0 16px 0
+
+    font-weight: 500
+    user-select: none
+
+    display: flex
+    justify-content: space-between
+    // justify-content: center
+
+// .headerInner
+//     display: flex
+//     gap: 80px
+
+.headerLink
+    filter: blur(5px)
+    transform: translate3d(0, 0, 0)
+    transition: 0.5s
+
+    &:hover
+        filter: none
+
+.whatItIs
+    display: none
+
+.sortMenuM
+    display: block
+
+@media screen and (min-width: $layout-breakpoint-mobile)
+    .whatItIs
+        display: block
+    .sortMenuM
+        display: none
+
+.sortByM
+    z-index: 6
+    font-weight: 500
+    // top: -1.5px
+    position: relative
+    white-space: nowrap
+    text-align: right
+
+    cursor: pointer
+
+    &:hover
+        opacity: 90%
+
+.sortListM
+    text-align: right
+    display: none
+
+    margin: 16px 0 8px 0
+
+    &.shown
+        display: block
+
+.sortItemM
+    padding: 8px 0
+    cursor: pointer
+    display: block
+
+    &.selected
+        text-decoration: underline

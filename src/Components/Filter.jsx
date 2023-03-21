@@ -1,0 +1,98 @@
+import { Fragment, useState, useRef, useEffect } from "react";
+import { RiArrowDownLine, RiArrowRightLine } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import { classNames } from "classnames";
+
+import { filter } from "../Data/FilterData";
+import { sort } from "../Data/FilterData";
+
+export default function Filter({
+  crumbs,
+  sortSelect,
+  setSortSelect,
+  category,
+}) {
+  //desktop sort open
+  const [showSortD, setShowSortD] = useState(false);
+  const sortField = useRef();
+
+  const toggleSortD = () => {
+    setShowSortD(!showSortD);
+  };
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!sortField.current.contains(e.target)) {
+        setShowSortD(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
+
+  return (
+    <Fragment>
+      <div className="filter">
+        <nav>
+          {filter.map(({ title, route }, i) => (
+            <motion.div
+              key={i}
+              className={`navLink ${
+                crumbs.length > 1 && route != crumbs[0] ? "hidden" : null
+              }`}
+              // className={route != crumbs[0] && "hidden"}
+              // onClick={() => setFilterSelect(i)}
+              animate
+            >
+              <NavLink to={`/${route}`}>
+                {route == category && (
+                  <motion.div
+                    className={`underline ${crumbs.length > 1 && "hidden"}`}
+                    layoutId="underline"
+                  />
+                )}
+                {title}
+              </NavLink>
+              {route == category && (
+                <div className={`navCrumb ${crumbs.length < 2 && "hidden"}`}>
+                  <RiArrowRightLine className="navCrumbArrow remixIcon" />
+                  {crumbs[1]}
+                </div>
+              )}
+            </motion.div>
+          ))}
+          <div
+            ref={sortField}
+            className={`sortMenuD ${crumbs.length > 1 ? "hidden" : null}`}
+          >
+            <div className="sortBy navLink" onClick={toggleSortD}>
+              Sort by &nbsp;
+              <RiArrowDownLine
+                className={showSortD ? "remixIcon turned" : "remixIcon"}
+              />
+            </div>
+            <div className={showSortD ? "sortListD shown" : "sortListD"}>
+              {sort.map(({ title, route }, i) => (
+                <div
+                  key={i}
+                  className={`sortItemD ${route === sortSelect && "selected"}`}
+                  onClick={() => {
+                    setSortSelect(route);
+                    toggleSortD();
+                  }}
+                >
+                  {title}
+                </div>
+              ))}
+            </div>
+          </div>
+        </nav>
+      </div>
+    </Fragment>
+  );
+}
