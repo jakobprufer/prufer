@@ -3,7 +3,6 @@ import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import Filter from "../Components/Filter";
-import Post from "../Components/Post";
 
 import projects from "../Data/Projects.json";
 import Overview from "../Pages/Overview";
@@ -92,25 +91,23 @@ function Page() {
 
   return (
     <Fragment>
-      <div className="widthOuter">
-        <div className="widthInner">
-          <div className="headerFilterBg"></div>
-          <div className="headerFilter">
-            <Header
-              sortSelect={sortSelect}
-              setSortSelect={setSortSelect}
-              crumbs={crumbs}
-            />
-            <Filter
-              location={location}
-              crumbs={crumbs}
-              sortSelect={sortSelect}
-              setSortSelect={setSortSelect}
-              category={category}
-            />
-          </div>
-          <Overview sortedData={sortedData} />
+      <div className="page">
+        <div className="headerFilterBg"></div>
+        <div className="headerFilter">
+          <Header
+            sortSelect={sortSelect}
+            setSortSelect={setSortSelect}
+            crumbs={crumbs}
+          />
+          <Filter
+            location={location}
+            crumbs={crumbs}
+            sortSelect={sortSelect}
+            setSortSelect={setSortSelect}
+            category={category}
+          />
         </div>
+        <Overview sortedData={sortedData} />
       </div>
     </Fragment>
   );

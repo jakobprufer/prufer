@@ -36,6 +36,9 @@ function useAudio(source, barRef) {
         // store it in state
         setCurrentTime(audioRef.current.currentTime);
       }}
+      onEnded={() => {
+        setPlaying(false);
+      }}
     />,
     {
       currentTime,

@@ -1,55 +1,53 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { motion, layout } from "framer-motion";
-import Post from "../Components/Post";
+import Card from "../Components/Card";
 import Player from "../Components/Player";
+import Img from "../Components/Img";
 
 export default function Overview({ sortedData }) {
+  //masonry effect
+  //function to resize individual cards:
+  function resizeMasonryItem(card) {
+    var grid = document.getElementsByClassName("overviewGrid")[0],
+      rowGap = parseInt(
+        window.getComputedStyle(grid).getPropertyValue("grid-row-gap")
+      ),
+      rowHeight = parseInt(
+        window.getComputedStyle(grid).getPropertyValue("grid-auto-rows")
+      );
+    var rowSpan = Math.ceil(
+      (card.querySelector(".cardContainer").getBoundingClientRect().height +
+        rowGap) /
+        (rowHeight + rowGap)
+    );
+    card.style.gridRowEnd = "span " + rowSpan;
+  }
+  //function to call all cards and resize them
+  function resizeAllMasonryItems() {
+    var allCards = document.getElementsByClassName("card");
+    for (var i = 0; i < allCards.length; i++) {
+      resizeMasonryItem(allCards[i]);
+    }
+  }
+  //activate resize function on reload, window resize, data change (sort or filter action)
+  useEffect(() => {
+    const masonryEvents = ["load", "resize"];
+    masonryEvents.forEach((event) => {
+      window.addEventListener(event, resizeAllMasonryItems);
+    });
+    resizeAllMasonryItems();
+    return () => {
+      masonryEvents.forEach((event) => {
+        window.removeEventListener(event, resizeAllMasonryItems);
+      });
+    };
+  }, [sortedData]);
+
   return (
     <Fragment>
-      <motion.div layout className="overviewGrid">
-        <motion.div layout className="post">
-          <div className="postHead">
-            <div className="title-small">East Cost Shots</div>
-          </div>
-          <div className="g2">
-            <div className="c32">
-              <img className="img" src="/Assets/nyc/1s.jpg" alt="" />
-            </div>
-            <div className="c32">
-              <img className="img" src="/Assets/nyc/2s.jpg" alt="" />
-            </div>
-            <div className="c32">
-              <img className="img" src="/Assets/nyc/18s.jpg" alt="" />
-            </div>
-            <div className="c32">
-              <img className="img" src="/Assets/nyc/4s.jpg" alt="" />
-            </div>
-            <div className="infoOverlay">
-              <div className="description">
-                Observations from solo walks through New York City, Philadelphia
-                and Richmond.
-              </div>
-              <div className="subtitle"> photo, 2015, 200 est. reach</div>
-            </div>
-          </div>
-        </motion.div>
-        <motion.div layout className="post">
-          <div className="postHead">
-            <div className="title-small">Tate</div>
-          </div>
-          <div className="c32">
-            <img className="img" src="/Assets/cardioguard/Beauty2.jpg" alt="" />
-            <div className="infoOverlay">
-              <div className="description">
-                English hip hop project focusing on beautiful textures and
-                relatable emotions.
-              </div>
-              <div className="subtitle"> music, since 2023, 10k est reach</div>
-            </div>
-          </div>
-        </motion.div>
-        {sortedData.map((sorted) => {
-          return <Post key={sorted.id} projects={sorted} />;
+      <motion.div layout className="overviewGrid content">
+        {sortedData.map((projects) => {
+          return <Card key={projects.id} projects={projects} />;
         })}
       </motion.div>
     </Fragment>

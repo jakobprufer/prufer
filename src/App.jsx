@@ -8,47 +8,47 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Page location="0" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/music",
-      element: <Page location="1" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/design",
-      element: <Page location="2" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/dj",
-      element: <Page location="3" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/video",
-      element: <Page location="4" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/photo",
-      element: <Page location="5" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/thoughts",
-      element: <Page location="6" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
       path: "/inspiration",
-      element: <Page location="7" />,
+      element: <Page />,
       errorElement: <Error />,
     },
     {
-      path: "/inspiration/yo",
-      element: <Page location="7" />,
+      path: "/music/jakobprufer",
+      element: <Page />,
       errorElement: <Error />,
     },
   ]);
