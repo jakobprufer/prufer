@@ -6,6 +6,9 @@
 .hidden
     display: none !important
 
+.drop
+    filter: drop-shadow(2px 2px 8px #0000005e)
+
 .headerFilterBg
     position: fixed
     top: 0
@@ -25,3 +28,75 @@
 
 .content
     margin-top: 115px
+    margin-bottom: 32px
+
+.project
+    padding-top: 16px
+    // display: flex
+    // flex-direction: column
+
+// .projectHead
+//     padding-top: 16px
+
+.fixedButtons
+    position: fixed
+    bottom: 32px
+    right: max(5vw, calc((100vw - 1200px) / 2 - 88px))
+
+    @media (pointer:none), (pointer:coarse)
+        display: none
+
+.sqButton
+    display: flex
+    align-items: center
+    max-width: fit-content
+    justify-content: center
+    height: 48px
+    min-width: 48px
+    background: $button
+    border-radius: 1px
+    cursor: pointer
+    user-select: none
+    // border: 1px solid transparent
+
+    &:hover
+        background: $button-hover
+        // border: 1px solid $selected-border
+
+    &.muted
+        filter: invert(1)
+
+.button
+    display: flex
+    align-items: center
+    max-width: fit-content
+    justify-content: center
+    height: 48px
+    padding: 0 16px
+    background: $button
+    border-radius: 1px
+    cursor: pointer
+    white-space: nowrap
+    user-select: none
+    // border: 1px solid transparent
+
+    font-weight: 600
+
+    &:hover
+        background: $button-hover
+        // border: 1px solid $selected-border
+
+    &:active
+        background: $selected
+
+.remixIcon
+    vertical-align: bottom
+    transition: 0.2s
+    height: 14px
+
+    &.turned
+        transform: rotate(180deg)
+        transition: 0.2s
+
+.socialIcon
+    font-size: 20px

@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import Filter from "../Components/Filter";
@@ -107,7 +107,9 @@ function Page() {
             category={category}
           />
         </div>
-        <Overview sortedData={sortedData} />
+        <div className="content">
+          <Outlet context={sortedData} />
+        </div>
       </div>
     </Fragment>
   );

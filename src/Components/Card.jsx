@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Img from "./Img";
+import SetImg from "./SetImg";
 
 export default function Card({ projects }) {
   return (
@@ -10,7 +10,7 @@ export default function Card({ projects }) {
         to={`/${projects.cat}/${projects.projectId}`}
       >
         <div className="cardHead">
-          <div className="title-big">{projects.title}</div>
+          <div className="smallH">{projects.title}</div>
           {/* <div className="description">{projects.description}</div> */}
           <div className="cardData">
             <span className="cardCategory">{projects.displayedCat}</span>,{" "}
@@ -25,10 +25,11 @@ export default function Card({ projects }) {
               {projects.cardImages.map((imageName) => {
                 const image = projects.images.find((i) => i.name === imageName);
                 return (
-                  <Img
+                  <SetImg
                     key={image.name}
                     name={image.name}
                     projectId={projects.projectId}
+                    ratio={image.ratio}
                     size={"m"}
                   />
                 );

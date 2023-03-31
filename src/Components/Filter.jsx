@@ -1,11 +1,12 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import { RiArrowDownLine, RiArrowRightLine } from "react-icons/ri";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { classNames } from "classnames";
 
 import { filter } from "../Data/FilterData";
 import { sort } from "../Data/FilterData";
+import projects from "../Data/Projects.json";
 
 export default function Filter({
   crumbs,
@@ -13,7 +14,7 @@ export default function Filter({
   setSortSelect,
   category,
 }) {
-  //desktop sort open
+  //desktop sort open and close
   const [showSortD, setShowSortD] = useState(false);
   const sortField = useRef();
 
@@ -35,6 +36,16 @@ export default function Filter({
     };
   }, []);
 
+  //get project title for crumbs
+  const [projectTitle, setProjectTitle] = useState("");
+
+  useEffect(() => {
+    const matchingObject = projects.find((obj) => obj.projectId === crumbs[1]);
+    if (matchingObject) {
+      setProjectTitle(matchingObject.title);
+    }
+  }, [projects, crumbs]);
+
   return (
     <Fragment>
       <div className="filter">
@@ -49,6 +60,15 @@ export default function Filter({
               // onClick={() => setFilterSelect(i)}
               animate
             >
+              {route == category && (
+                <Link
+                  className={`navCrumb ${crumbs.length < 2 && "hidden"}`}
+                  to="/"
+                >
+                  All Projects
+                  <RiArrowRightLine className="navCrumbArrow remixIcon" />
+                </Link>
+              )}
               <NavLink to={`/${route}`}>
                 {route == category && (
                   <motion.div
@@ -61,7 +81,7 @@ export default function Filter({
               {route == category && (
                 <div className={`navCrumb ${crumbs.length < 2 && "hidden"}`}>
                   <RiArrowRightLine className="navCrumbArrow remixIcon" />
-                  {crumbs[1]}
+                  {projectTitle}
                 </div>
               )}
             </motion.div>
