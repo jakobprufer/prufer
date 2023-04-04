@@ -23,14 +23,16 @@ export default function Card({ projects }) {
           {projects.cardLayout?.includes("cardStd") == true && (
             <div className={projects.cardGrid}>
               {projects.cardImages.map((imageName) => {
-                const image = projects.images.find((i) => i.name === imageName);
+                const image =
+                  projects.images.find((i) => i.name == imageName) ||
+                  projects.customImages.find((i) => i.name == imageName);
                 return (
                   <SetImg
                     key={image.name}
                     name={image.name}
                     projectId={projects.projectId}
                     ratio={image.ratio}
-                    size={"m"}
+                    size={projects.cardGrid.includes("g1") ? "m" : "s"}
                   />
                 );
               })}

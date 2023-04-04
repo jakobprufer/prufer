@@ -27,13 +27,14 @@
     z-index: 10
 
 .content
-    margin-top: 115px
+    margin-top: $filter-header-height
     margin-bottom: 32px
 
 .project
     padding-top: 16px
-    // display: flex
-    // flex-direction: column
+    min-height: calc( 100vh - $filter-header-height - 32px ) // maybe do this differently
+    display: flex
+    flex-direction: column
 
 // .projectHead
 //     padding-top: 16px
@@ -41,7 +42,8 @@
 .fixedButtons
     position: fixed
     bottom: 32px
-    right: max(5vw, calc((100vw - 1200px) / 2 - 88px))
+    // right: max(5vw, calc((100vw - 1200px) / 2 - 88px))
+    right: 32px
 
     @media (pointer:none), (pointer:coarse)
         display: none
@@ -65,6 +67,9 @@
 
     &.muted
         filter: invert(1)
+
+#muteButton
+    border-radius: 50%
 
 .button
     display: flex

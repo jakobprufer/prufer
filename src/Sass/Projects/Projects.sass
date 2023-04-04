@@ -74,6 +74,12 @@
     flex: 1.5
     min-width: 380px
 
+.projectContent
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    flex-grow: 1
+
 .projectLinks
     display: flex
     justify-content: left
@@ -112,3 +118,64 @@
 
 .playerTitle
     margin-bottom: 8px
+
+.slide
+    width: 100%
+    display: flex
+    align-items: stretch
+    margin-top: 32px
+    user-select: none
+
+.slideContentOuter
+    flex-shrink: 1
+    flex-grow: 1
+
+.slideContent
+    display: flex
+    // border: 1.5px solid black
+    overflow: hidden
+
+.slideNav
+    width: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    user-select: none
+
+    &:hover
+        opacity: 90%
+
+    &:active
+        filter: drop-shadow(2px 2px 8px #0000005e)
+
+    @media screen and (max-width: $layout-breakpoint-mobile)
+        display: none
+
+.captionArea
+    margin: 0 48px
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+    @media screen and (max-width: $layout-breakpoint-mobile)
+        margin: 0
+
+.slideNavMobile
+    width: 48px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    flex-shrink: 0
+    user-select: none
+
+    &:hover
+        opacity: 90%
+
+    &:active
+        filter: drop-shadow(2px 2px 8px #0000005e)
+
+    @media screen and (min-width: $layout-breakpoint-mobile)
+        display: none

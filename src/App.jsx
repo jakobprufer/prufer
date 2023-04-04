@@ -5,6 +5,9 @@ import Error from "./Pages/Error";
 import { toHaveFormValues } from "@testing-library/jest-dom/dist/matchers";
 import Overview from "./Pages/Overview";
 import JakobPrufer from "./Pages/JakobPrufer";
+import EastCoast from "./Pages/EastCoast";
+import Sydenham from "./Pages/Sydenham";
+import LondonPeople from "./Pages/LondonPeople";
 
 function App() {
   const router = createBrowserRouter([
@@ -76,6 +79,39 @@ function App() {
         {
           path: "",
           element: <Overview />,
+        },
+      ],
+    },
+    {
+      path: "/photo/eastcoast",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <EastCoast />,
+        },
+      ],
+    },
+    {
+      path: "/photo/sydenham",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Sydenham />,
+        },
+      ],
+    },
+    {
+      path: "/photo/londonpeople",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <LondonPeople />,
         },
       ],
     },

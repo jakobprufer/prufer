@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { RiArrowDownLine } from "react-icons/ri";
 
 import { sort } from "../Data/FilterData";
+import FlipAbout from "./FlipAbout";
 
 export default function Header({ sortSelect, setSortSelect, crumbs }) {
   //mobile sort open
@@ -18,7 +19,7 @@ export default function Header({ sortSelect, setSortSelect, crumbs }) {
         {/* <div className="headerInner"> */}
         <div className="headerLink name">Jakob Prufer</div>
         {/* <div className="headerLink">Musician</div> */}
-        <div className="headerLink whatItIs">things I'm proud of</div>
+        <FlipAbout />
         <div className={`sortMenuM ${crumbs.length > 1 ? "hidden" : null}`}>
           <div className="sortByM" onClick={toggleSortM}>
             Sort by&nbsp;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef, Ref } from "react";
 import projects from "../Data/Projects.json";
 
 export default function CustomImg({ projectId, name, className, size }) {

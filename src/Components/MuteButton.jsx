@@ -4,6 +4,7 @@ export default function MuteButton({ muted, setMuted }) {
   return (
     <div
       className={`sqButton ${muted ? "muted" : null}`}
+      id="muteButton"
       onClick={() => setMuted(!muted)}
     >
       {muted ? (
