@@ -9,6 +9,10 @@
 .drop
     filter: drop-shadow(2px 2px 8px #0000005e)
 
+.difference
+    mix-blend-mode: difference
+    filter: invert(1)
+
 .headerFilterBg
     position: fixed
     top: 0
@@ -67,6 +71,9 @@
 
     &.muted
         filter: invert(1)
+
+    &:active
+        background: $selected
 
 #muteButton
     border-radius: 50%

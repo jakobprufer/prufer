@@ -15,7 +15,7 @@ export default function Header({ sortSelect, setSortSelect, crumbs }) {
 
   return (
     <Fragment>
-      <div className="header">
+      <div className={`header ${crumbs.length > 1 ? "headerTucked" : null}`}>
         {/* <div className="headerInner"> */}
         <div className="headerLink name">Jakob Prufer</div>
         {/* <div className="headerLink">Musician</div> */}

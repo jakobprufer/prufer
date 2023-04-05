@@ -50,66 +50,6 @@ export default function Overview() {
   return (
     <Fragment>
       <motion.div layout className="overviewGrid">
-        {/* <div className="card">
-          <div className="cardContainer">
-            <div className="cardHead">
-              <div className="title-big">MA UX Design Blog</div>
-              <div className="cardData">
-                <span className="cardCategory">Design</span>,{" "}
-                <span className="cardYear">2023</span>
-              </div>
-            </div>
-            <div className="cardContent">
-              <div className="g1">
-                <div className="c32 border">
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"1"}
-                    size={"s"}
-                    alt=""
-                    className="mauxImg1 hoverScale"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"2"}
-                    size={"s"}
-                    className="mauxImg2 hoverScale drop"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"3"}
-                    size={"s"}
-                    className="mauxImg3 hoverScale"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"4"}
-                    size={"s"}
-                    className="mauxImg4 hoverScale drop"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"5"}
-                    size={"s"}
-                    className="mauxImg5 hoverScale"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"6"}
-                    size={"s"}
-                    className="mauxImg6 drop"
-                  />
-                  <CustomImg
-                    projectId={"maux"}
-                    name={"7"}
-                    size={"s"}
-                    className="mauxImg7"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         {sortedData.map((projects) => {
           return <Card key={projects.id} projects={projects} />;
         })}
