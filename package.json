@@ -10,6 +10,7 @@
     "cleanup-react-app": "^1.1.3",
     "framer-motion": "^10.2.3",
     "global": "^4.4.0",
+    "jquery": "^3.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",

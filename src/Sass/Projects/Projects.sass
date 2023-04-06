@@ -1,5 +1,80 @@
 
 //project draft
+.contentContainer
+    display: flex
+
+.progressIndicator
+    width: 48px
+    margin-top: 64px
+    flex-shrink: 0
+
+.progressIndicatorInner
+    top: calc($filter-header-height + 16px)
+    display: flex
+    flex-direction: column
+    gap: 8px
+    // transform-origin: 0 0
+    // transform: rotate(-90deg)
+
+.stickyWrapper
+    position: relative
+    top: 0
+    height: 100px
+
+.stickyInne
+
+.sticky .stickyInner
+    position: fixed
+    top: calc($filter-header-height + 16px)
+    transition: 0.1s
+
+.progressLog
+    width: 32px
+    background: $button
+    // color: $background
+    border-radius: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 11px 0
+    position: relative
+    overflow: hidden
+
+    &.inactive
+
+    &.activeSection
+        // background: $darkgrey
+        // color: $background
+        padding: 14px 0
+
+.progressLogBar
+    position: absolute
+    top: 0
+    left: 0
+    background: $darker
+    width: 100%
+
+.progressExt
+    height: 0
+    // width: 0
+    transition: 0.2s
+
+.activeSection .progressExt
+    height: auto
+    transition: 0.2s
+
+.progressText
+    white-space: nowrap
+    writing-mode: vertical-rl
+    z-index: 20
+
+.progressNum
+    display: inline-block
+
+.progressExt
+    display: inline-block
+    overflow: clip
+
 .projectHead
     display: flex
     flex-direction: row-reverse
@@ -124,3 +199,9 @@
 
     @media screen and (min-width: $layout-breakpoint-mobile)
         display: none
+
+//cardioguard
+.projectSection
+    margin-top: 64px
+    height: 1000px
+    background: red

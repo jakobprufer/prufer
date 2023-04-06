@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useLocation, Link, Outlet } from "react-router-dom";
+import { useLocation, Link, Outlet, ScrollRestoration } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import Filter from "../Components/Filter";
@@ -91,6 +91,7 @@ function Page() {
 
   return (
     <Fragment>
+      <ScrollRestoration />
       <div className="page">
         <div className="headerFilterBg"></div>
         <div className="headerFilter">

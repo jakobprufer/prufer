@@ -18,8 +18,11 @@ export default function Card({ projects }) {
             <div className="cardData">
               <span className="cardCategory">{projects.displayedCat}</span>,{" "}
               <span className="cardYear">
-                {projects.date.toString().substring(0, 4)}
+                {projects.date.toString().substring(0, 4)}{" "}
               </span>
+              {projects.displayedTools ? (
+                <span className="cardTools">({projects.displayedTools})</span>
+              ) : null}
             </div>
           </div>
           <div className="cardContent">
@@ -56,7 +59,10 @@ export default function Card({ projects }) {
               <span className="cardCategory">{projects.displayedCat}</span>,{" "}
               <span className="cardYear">
                 {projects.date.toString().substring(0, 4)}
-              </span>
+              </span>{" "}
+              {projects.displayedTools ? (
+                <span className="cardTools">({projects.displayedTools})</span>
+              ) : null}
             </div>
           </div>
           <div

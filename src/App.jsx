@@ -8,6 +8,7 @@ import JakobPrufer from "./Pages/JakobPrufer";
 import EastCoast from "./Pages/EastCoast";
 import Sydenham from "./Pages/Sydenham";
 import LondonPeople from "./Pages/LondonPeople";
+import CardioGuard from "./Pages/CardioGuard";
 
 function App() {
   const router = createBrowserRouter([
@@ -52,6 +53,17 @@ function App() {
         {
           path: "",
           element: <Overview />,
+        },
+      ],
+    },
+    {
+      path: "/design/cardioguard",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <CardioGuard />,
         },
       ],
     },
