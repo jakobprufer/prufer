@@ -112,13 +112,13 @@
     "rating": 8,
     "reach": 10,
     "projectId": "cardioguard",
-    "title": "CardioGuard Research & UI",
+    "title": "CardioGuard UI",
     "description": "Temp",
     "intro": "Temp",
     "cardLayout": "Custom",
     "cardGrid": "g1",
     "images": [{"name": "cardbg", "cardSize": "m"}, {"name": "card1", "cardSize": "s", "styling": "hoverScale"},{"name": "card2", "cardSize": "s", "styling": "hoverScale"},{"name": "card3", "cardSize": "s", "styling": "hoverScale"},{"name": "card4","cardSize": "s", "styling": "hoverScale"},{"name": "card5", "cardSize": "s", "styling": "hoverScale"}],
     "cardImages": ["cardbg","card1","card2","card3","card4","card5"],
-    "cardBackground": "cardioguard"
+    "cardBackground": "cardioguardcolor"
   }
 ]

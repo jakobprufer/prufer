@@ -83,49 +83,6 @@ export default function Card({ projects }) {
                   />
                 );
               })}
-              {/* <CustomImg
-                projectId={"maux"}
-                name={"1"}
-                size={"s"}
-                alt=""
-                className="mauxImg1 hoverScale"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"2"}
-                size={"s"}
-                className="mauxImg2 hoverScale drop"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"3"}
-                size={"s"}
-                className="mauxImg3 hoverScale"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"4"}
-                size={"s"}
-                className="mauxImg4 hoverScale drop"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"5"}
-                size={"s"}
-                className="mauxImg5 hoverScale"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"6"}
-                size={"s"}
-                className="mauxImg6 drop"
-              />
-              <CustomImg
-                projectId={"maux"}
-                name={"7"}
-                size={"s"}
-                className="mauxImg7"
-              /> */}
             </div>
           </div>
         </Link>

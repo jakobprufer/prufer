@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link as LinkS } from "react-scroll";
 
 export default function ProgressIndicator({ activeSection, scrollPosition }) {
   // attach progress indicator
@@ -34,7 +35,31 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
       <div className={`stickyWrapper ${attach ? "sticky" : null}`}>
         <div className={`stickyInner`}>
           <div className="progressIndicatorInner">
-            <div
+            <LinkS
+              to="section0"
+              smooth={true}
+              duration={800}
+              offset={-120}
+              className={`progressLog ${
+                activeSection == "section0" && "activeSection"
+              }`}
+            >
+              {activeSection == "section0" ? (
+                <div
+                  className="progressLogBar"
+                  style={{ height: `${scrollPosition}%` }}
+                ></div>
+              ) : null}
+              <div className="progressText">
+                <span className="progressNum">0</span>
+                <span className="progressExt">&nbsp;- Brief</span>
+              </div>
+            </LinkS>
+            <LinkS
+              to="section1"
+              smooth={true}
+              duration={800}
+              offset={-120}
               className={`progressLog ${
                 activeSection == "section1" && "activeSection"
               }`}
@@ -46,11 +71,15 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
                 ></div>
               ) : null}
               <div className="progressText">
-                <div className="progressNum">1</div>
-                <div className="progressExt">&nbsp;- Research</div>
+                <span className="progressNum">1</span>
+                <span className="progressExt">&nbsp;- Research</span>
               </div>
-            </div>
-            <div
+            </LinkS>
+            <LinkS
+              to="section2"
+              smooth={true}
+              duration={800}
+              offset={-120}
               className={`progressLog ${
                 activeSection == "section2" && "activeSection"
               }`}
@@ -62,11 +91,15 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
                 ></div>
               ) : null}
               <div className="progressText">
-                <div className="progressNum">2</div>
-                <div className="progressExt">&nbsp;- Conceptualization</div>
+                <span className="progressNum">2</span>
+                <span className="progressExt">&nbsp;- Conceptualization</span>
               </div>
-            </div>
-            <div
+            </LinkS>
+            <LinkS
+              to="section3"
+              smooth={true}
+              duration={800}
+              offset={-120}
               className={`progressLog ${
                 activeSection == "section3" && "activeSection"
               }`}
@@ -78,11 +111,15 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
                 ></div>
               ) : null}
               <div className="progressText">
-                <div className="progressNum">3</div>
-                <div className="progressExt">&nbsp;- Ideation</div>
+                <span className="progressNum">3</span>
+                <span className="progressExt">&nbsp;- Ideation</span>
               </div>
-            </div>
-            <div
+            </LinkS>
+            <LinkS
+              to="section4"
+              smooth={true}
+              duration={800}
+              offset={-120}
               className={`progressLog ${
                 activeSection == "section4" && "activeSection"
               }`}
@@ -94,11 +131,15 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
                 ></div>
               ) : null}
               <div className="progressText">
-                <div className="progressNum">4</div>
-                <div className="progressExt">&nbsp;- Testing</div>
+                <span className="progressNum">4</span>
+                <span className="progressExt">&nbsp;- User Testing</span>
               </div>
-            </div>
-            <div
+            </LinkS>
+            <LinkS
+              to="section5"
+              smooth={true}
+              duration={800}
+              offset={-120}
               className={`progressLog ${
                 activeSection == "section5" && "activeSection"
               }`}
@@ -110,10 +151,10 @@ export default function ProgressIndicator({ activeSection, scrollPosition }) {
                 ></div>
               ) : null}
               <div className="progressText">
-                <div className="progressNum">5</div>
-                <div className="progressExt">&nbsp;- Prototype</div>
+                <span className="progressNum">5</span>
+                <span className="progressExt">&nbsp;- Prototype</span>
               </div>
-            </div>
+            </LinkS>
           </div>
         </div>
       </div>

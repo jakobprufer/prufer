@@ -24,7 +24,7 @@ export default function JakobPrufer() {
   const [muted, setMuted] = useState(false);
 
   return (
-    <div className="project">
+    <div className="project jakobprufer">
       <div className="bigH">{current.title}</div>
       <div className="projectHead">
         <div className="projectImage">
