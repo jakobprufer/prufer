@@ -67,17 +67,18 @@ export default function ImageSlide({ images, projectId, ratio }) {
                 custom={{ direction, width }}
                 className="imgSlide"
               >
-                <img
+                {/* <img
                   src={`/Assets/${projectId}/l/${projectId}${images[current].name}.jpg`}
                   alt=""
                   className="slideImg"
+                /> */}
+                <CustomImg
+                  name={images[current].name}
+                  projectId={projectId}
+                  className="imgSlide"
+                  size={"l"}
+                  alt={images[current].description}
                 />
-                {/* <CustomImg
-                name={images[current].name}
-                projectId={projectId}
-                className="imgSlide"
-                size={"l"}
-              /> */}
               </motion.div>
             </AnimatePresence>
           </div>

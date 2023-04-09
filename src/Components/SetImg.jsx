@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import projects from "../Data/Projects.json";
 
-export default function SetImg({ projectId, name, size, ratio }) {
+export default function SetImg({ projectId, name, size, ratio, alt }) {
   const projectImages = projects.find((p) => p.projectId === projectId)?.images;
   const image = projectImages?.find((img) => img.name === name);
   const [imageUrl, setImageUrl] = useState(null);
@@ -25,7 +25,7 @@ export default function SetImg({ projectId, name, size, ratio }) {
 
   return imageUrl ? (
     <div className={ratio}>
-      <img src={imageUrl} alt="" className="img" />
+      <img src={imageUrl} alt={alt} className="img" />
     </div>
   ) : null;
 }

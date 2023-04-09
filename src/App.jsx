@@ -9,6 +9,9 @@ import EastCoast from "./Pages/EastCoast";
 import Sydenham from "./Pages/Sydenham";
 import LondonPeople from "./Pages/LondonPeople";
 import CardioGuard from "./Pages/CardioGuard";
+import Maux from "./Pages/Maux";
+import Pulse from "./Pages/Pulse";
+import FacePerception from "./Pages/FacePerception";
 
 function App() {
   const router = createBrowserRouter([
@@ -64,6 +67,39 @@ function App() {
         {
           path: "",
           element: <CardioGuard />,
+        },
+      ],
+    },
+    {
+      path: "/design/maux",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Maux />,
+        },
+      ],
+    },
+    {
+      path: "/design/pulse",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Pulse />,
+        },
+      ],
+    },
+    {
+      path: "/design/faceperception",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <FacePerception />,
         },
       ],
     },

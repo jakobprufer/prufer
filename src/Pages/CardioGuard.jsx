@@ -60,26 +60,6 @@ export default function CardioGuard() {
     <div className={`project ${current.projectId}`}>
       <div className="projectHead">
         <div className="projectImage">
-          {/* <div
-            className={`cardContent ${current.projectId}${current.cardLayout}`}
-          >
-            <div className={`c32 ${current.cardBackground}`}>
-              {current.cardImages.map((imageName) => {
-                const image =
-                  current.images.find((i) => i.name == imageName) ||
-                  current.customImages.find((i) => i.name == imageName);
-                return (
-                  <CustomImg
-                    key={image.name}
-                    name={image.name}
-                    projectId={current.projectId}
-                    size={image.cardSize}
-                    className={`customCardImg custom${image.name} ${image.styling}`}
-                  />
-                );
-              })}
-            </div>
-          </div> */}
           <div className="c11">
             <img src="/Assets/cardioguard/hero.gif" alt="" className="img" />
           </div>
@@ -87,26 +67,26 @@ export default function CardioGuard() {
         <div className="projectInfo">
           <div>
             <div className="bigH">{current.title}</div>
-            <p className="bigP">
+            <div className="bigP">
               <ul>
                 <li>
-                  <div className="tinyH">Mission:</div> Health tracking can be
-                  be stress-inducing and overwhelming. We designed a heart
-                  health app that feels friendly, science-backed and is
-                  accessible for elderly users.
+                  <div className="tinyH">Mission:</div>Health tracking can be be
+                  stress-inducing and overwhelming. We designed a heart health
+                  app that feels friendly, science-backed and is accessible for
+                  elderly users.
                 </li>
                 <li>
-                  <div className="tinyH">My Role:</div> Research, ideation,
+                  <div className="tinyH">My Role:</div>Research, ideation,
                   prototyping, user testing
                 </li>
                 <li>
-                  <div className="tinyH">Tools:</div> Figma, Adobe CC
+                  <div className="tinyH">Tools:</div>Figma, Adobe CC
                 </li>
                 <li>
-                  <div className="tinyH">Completed:</div> 03/2023
+                  <div className="tinyH">Completed:</div>03/2023
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -249,7 +229,7 @@ export default function CardioGuard() {
                   on sign up and aspects of presentation in an affinity diagram.
                   We concluded that our main focuses for the project were:
                 </p>
-                <p className="bigP">
+                <div className="bigP">
                   <ul className="bulletlist">
                     <li>Creating a human an personal touch</li>
                     <li>Make it easy to understand and read</li>
@@ -258,7 +238,7 @@ export default function CardioGuard() {
                     </li>
                     <li>Reminding patients to keep information up to date</li>
                   </ul>
-                </p>
+                </div>
                 <p className="bigP">
                   Accordingly, we created some personas to further understand
                   users needs and behaviours, for example:
@@ -446,7 +426,7 @@ export default function CardioGuard() {
               </div>
               <div className="sectionText">
                 <div className="sectionTitle smallH">Key Takeaways:</div>
-                <p className="bigP">
+                <div className="bigP">
                   <ul className="bulletlist">
                     <li>
                       You have to challenge your own assumptions – what might be
@@ -462,7 +442,7 @@ export default function CardioGuard() {
                       process is
                     </li>
                   </ul>
-                </p>
+                </div>
               </div>
             </div>
           </section>

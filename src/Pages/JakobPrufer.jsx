@@ -76,8 +76,8 @@ export default function JakobPrufer() {
                   <span className="bigP"> (2018)</span>
                 </div>
                 <ProjectLinks
-                  video1="https://www.youtube.com/watch?v=Uhf-ksr4NSA"
-                  video1Title="Music Video"
+                  link1="https://www.youtube.com/watch?v=Uhf-ksr4NSA"
+                  link1Title="Music Video"
                   spotify={
                     "https://open.spotify.com/album/573kIZBlS5XdHPHIq1yHQl?si=VeCdEjnOSLWTeXsRYHE-lA"
                   }

@@ -7,10 +7,10 @@ import {
 } from "react-icons/ri";
 
 export default function ProjectLinks({
-  video1,
-  video1Title,
-  video2,
-  video2Title,
+  link1,
+  link1Title,
+  link2,
+  link2Title,
   spotify,
   apple,
   youtube,
@@ -49,14 +49,14 @@ export default function ProjectLinks({
           <RiAmazonFill className="socialIcon" />
         </a>
       ) : null}
-      {video1 ? (
-        <a href={video1} target="_blank" rel="noreferrer" className="button">
-          {video1Title}
+      {link1 ? (
+        <a href={link1} target="_blank" rel="noreferrer" className="button">
+          {link1Title}
         </a>
       ) : null}
-      {video2 ? (
-        <a href={video2} target="_blank" rel="noreferrer" className="button">
-          {video2Title}
+      {link2 ? (
+        <a href={link2} target="_blank" rel="noreferrer" className="button">
+          {link2Title}
         </a>
       ) : null}
     </div>

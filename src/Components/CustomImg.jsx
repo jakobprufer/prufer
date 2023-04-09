@@ -1,7 +1,7 @@
 import React, { useState, useEffect, forwardRef, Ref } from "react";
 import projects from "../Data/Projects.json";
 
-export default function CustomImg({ projectId, name, className, size }) {
+export default function CustomImg({ projectId, name, className, size, alt }) {
   const projectImages = projects.find((p) => p.projectId === projectId)?.images;
   const image = projectImages?.find((img) => img.name === name);
   const [imageUrl, setImageUrl] = useState(null);
@@ -23,5 +23,7 @@ export default function CustomImg({ projectId, name, className, size }) {
     getImage();
   }, [projectId, name, size]);
 
-  return imageUrl ? <img src={imageUrl} alt="" className={className} /> : null;
+  return imageUrl ? (
+    <img src={imageUrl} alt={alt} className={className} />
+  ) : null;
 }
