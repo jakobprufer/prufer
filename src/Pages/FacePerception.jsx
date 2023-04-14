@@ -59,38 +59,28 @@ export default function FacePerception() {
         <div className="projectSection">
           <div className="projectInnersection">
             <p className="bigP">
-              When I joined the London School of Economics in 2019, its student
-              radio was in need of a rebrand. I designed a new identity, logo
-              and website which helped the progress the society made since then:
-              Instagram followers have risen from ca. 300 to 1.5k and the then
-              dormant society now regularly hosts sold out parties in renowned
-              London night clubs. Fellow committee member{" "}
-              <a
-                href="https://www.instagram.com/alanahsarginson/"
-                target="_blank"
-              >
-                @alanahsarginson
-              </a>{" "}
-              took the identity to a new level with her poster designs.
+              Graded first (74%), this is my BSc dissertation project at the
+              London School of Economics and Behavioural Science. I decided to
+              focus on face perception. My supervisor, Deema Awad, had
+              introduced me to the gaze cueing effect – our innate tendency to
+              detect visual targets quicker if we perceive someone else already
+              looking in their direction. This phenomenon tied in with my
+              interest in the evolutionary foundation of our cognition.
+              Specifically, I investigated whether facial attractiveness affects
+              the gaze cueing effect – a feasible hypothesis, as attractive
+              faces have been found to exceedingly attract and hold attention.
             </p>
             <p className="bigP">
-              My favourite UX feature I added in April 2020 during the height of
-              first Covid19 lockdown: a live chat plugin next to the live
-              player. This elevated all the shows, especially those focusing on
-              political discussion and campus gossip, and transformed Pulse from
-              a one-way broadcast into and interactive experience.
-            </p>
-            <p className="bigP">
-              See the slide below for some of my contributions and older designs
-              for comparison:
+              I designed and conducted a quantitative online study with 52
+              participants using the Gorilla experiment builder for the timed
+              reaction tasks. The research was preregistered and underwent
+              university ethics approval. I then performed data cleaning,
+              preliminary and main ANOVA analysis using the statistical
+              programming language R in RStudio.
             </p>
           </div>
+          <SetImg name="flow" ratio="c43" projectId="faceperception" size="l" />
         </div>
-        <ImageSlide
-          images={current.images}
-          projectId={current.projectId}
-          ratio="c32"
-        />
       </div>
     </div>
   );

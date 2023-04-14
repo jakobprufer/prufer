@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Spectral:wght@400;500;600;700;800&display=swap')
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap')
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,300,501,901,400&f[]=sentient@400,700,200,500,300&f[]=cabinet-grotesk@1&f[]=switzer@1&display=swap')
 
 html
     color: $font
@@ -18,11 +18,21 @@ body
     font-weight: 800
     // line-height: 16pt
     // padding: 16px 0
+    min-height: 18pt
 
 .bigH
     font-size: 40pt
     font-weight: 800
     padding-bottom: 16px
+
+.textCardH
+    font-size: 24pt
+    font-weight: 800
+    padding-bottom: 8px
+
+@container (max-width: 300px)
+    .textCardH
+        font-size: 18pt
 
 .tinyH
     font-size: 12pt
@@ -37,8 +47,15 @@ body
 .description
     font-weight: 400
 
+.medSub
+    font-size: 14pt
+    // font-weight: 600
+
+.medP
+    font-size: 12pt
+
 .bigP
-    font-size: 18pt
+    font-size: 16pt
     padding-bottom: 16px
     line-height: 20pt
 
@@ -63,3 +80,10 @@ p
     padding-top: 16px // to avoid jumping for empty descriptions, maybe other solution
     white-space: wrap
     line-height: 1.3rem
+
+//font classes
+.sentient
+    font-family: 'Sentient', serif
+
+.uppercase
+    text-transform: uppercase

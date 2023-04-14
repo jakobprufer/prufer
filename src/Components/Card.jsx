@@ -46,7 +46,7 @@ export default function Card({ projects }) {
             )}
           </div>
         </Link>
-      ) : (
+      ) : projects.cardLayout == "Custom" ? (
         // Custom Card Layout
         <Link
           className="cardContainer"
@@ -83,6 +83,39 @@ export default function Card({ projects }) {
                   />
                 );
               })}
+            </div>
+          </div>
+        </Link>
+      ) : (
+        //Text layout
+        <Link
+          className="cardContainer"
+          to={`/${projects.cat}/${projects.projectId}`}
+        >
+          <div className="cardHead">
+            <div className="smallH"></div>
+            {/* <div className="description">{projects.description}</div> */}
+            <div className="cardData">
+              <span className="cardCategory">{projects.displayedCat}</span>,{" "}
+              <span className="cardYear">
+                {projects.date.toString().substring(0, 4)}
+              </span>{" "}
+              {projects.displayedTools ? (
+                <span className="cardTools">({projects.displayedTools})</span>
+              ) : null}
+            </div>
+          </div>
+          <div className={`cardContent`}>
+            <div className={`c32 ${projects.cardBackground}`}>
+              <div className={`textCard ${projects.cardTextColor}`}>
+                <div className="textCardHead">
+                  <div className="textCardH sentient uppercase">
+                    {projects.title}
+                  </div>
+                  <div className="medSub">{projects.subtitle}</div>
+                </div>
+                <div>{projects.published}</div>
+              </div>
             </div>
           </div>
         </Link>

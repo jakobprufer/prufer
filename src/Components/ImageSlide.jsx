@@ -67,18 +67,31 @@ export default function ImageSlide({ images, projectId, ratio }) {
                 custom={{ direction, width }}
                 className="imgSlide"
               >
-                {/* <img
-                  src={`/Assets/${projectId}/l/${projectId}${images[current].name}.jpg`}
-                  alt=""
-                  className="slideImg"
-                /> */}
-                <CustomImg
-                  name={images[current].name}
-                  projectId={projectId}
-                  className="imgSlide"
-                  size={"l"}
-                  alt={images[current].description}
-                />
+                {images[current].video == "auto" ? (
+                  <video
+                    className="imgSlide"
+                    width="1920"
+                    height="1080"
+                    autoPlay
+                    muted
+                    playsInline
+                    preload="auto"
+                    loop
+                  >
+                    <source
+                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4`}
+                      type="video/mp4"
+                    />
+                  </video>
+                ) : (
+                  <CustomImg
+                    name={images[current].name}
+                    projectId={projectId}
+                    className="imgSlide"
+                    size={"l"}
+                    alt={images[current].description}
+                  />
+                )}
               </motion.div>
             </AnimatePresence>
           </div>

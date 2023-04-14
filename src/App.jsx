@@ -12,6 +12,8 @@ import CardioGuard from "./Pages/CardioGuard";
 import Maux from "./Pages/Maux";
 import Pulse from "./Pages/Pulse";
 import FacePerception from "./Pages/FacePerception";
+import Upbound from "./Pages/Upbound";
+import JAV from "./Pages/JAV";
 
 function App() {
   const router = createBrowserRouter([
@@ -100,6 +102,28 @@ function App() {
         {
           path: "",
           element: <FacePerception />,
+        },
+      ],
+    },
+    {
+      path: "/design/upbound",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Upbound />,
+        },
+      ],
+    },
+    {
+      path: "/design/jav",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <JAV />,
         },
       ],
     },

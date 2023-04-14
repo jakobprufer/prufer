@@ -5,14 +5,53 @@
     transform: scale(0.95)
 
 //colours
-.lightgrey
+.dirtycream
     background: #e8e4dd
 
 .cardioguardcolor
     background: #F9FAFB
 
+.cardioguardtransient
+    background-image: linear-gradient(to top, #f9fafb, #f2f5f7, #ebf1f1, #e5ece9, #e2e7e1, #dfe1d6, #dfd9cb, #e1d1c2, #e3c5b7, #e4b9b1, #e3adb0, #dea2b5)
+    background-size: 100% 200%
+    background-position: 0 100%
+    moz-transition: all .4s ease-in-out
+    -o-transition: all .4s ease-in-out
+    -webkit-transition: all .4s ease-in-out
+    transition: all .4s ease-in-out
+
+    &:hover
+        background-size: 100% 100%
+
+.testBackground
+    background-image: url('https://i.pinimg.com/564x/56/3a/54/563a549d93d935fba3bcd0234bd1b468.jpg')
+    background-size: cover
+
 .pulsegrey
     background: #232323
+
+.lightgrey
+    background: $button
+
+.textBackgroundcolor
+    color: $background
+
+//textCard
+.textCard
+    padding: 24px
+    width: 90%
+    height: 100%
+    top: 0
+    left: 0
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    color: #303030
+    // color: #fff
+
+.textCardHead
+    container-type: size
 
 //MAUX
 .mauxCustom
@@ -201,3 +240,66 @@
         width: 25%
         top: 30%
         right: 15%
+
+//upbound
+.upboundCustom
+    .customCardImg
+        position: absolute
+        transition: transform 0.3s ease-out
+
+    .customcard1
+        width: 55%
+        top: 15%
+        left: 8%
+
+    .customcard2
+        width: 25%
+        top: 10%
+        left: 8%
+
+    .customcard3
+        width: 25%
+        bottom: 8%
+        left: 8%
+
+    .customcard4
+        width: 25%
+        top: 5%
+        left: 8%
+        display: none
+
+    .customcard5
+        width: 20%
+        bottom: 16%
+        left: 20%
+
+    .customcard6
+        width: 30%
+        bottom: 8%
+        right: 20%
+
+    .customcard7
+        width: 30%
+        top: 8%
+        left: 30%
+
+    .customcard8
+        width: 28%
+        bottom: 20%
+        right: 8%
+
+    .customcard9
+        width: 55%
+        top: 8%
+        right: 2%
+
+//upbound
+.javCustom
+    .customCardImg
+        position: absolute
+        transition: transform 0.3s ease-out
+
+    .customcard1
+        width: 100%
+        top: 0
+        left: 0
