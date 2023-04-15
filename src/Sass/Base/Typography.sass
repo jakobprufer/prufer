@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Spectral:wght@400;500;600;700;800&display=swap')
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,300,501,901,400&f[]=sentient@400,700,200,500,300&f[]=cabinet-grotesk@1&f[]=switzer@1&display=swap')
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,300,501,901,400,401&f[]=sentient@400,700,200,500,300&f[]=cabinet-grotesk@1&f[]=switzer@1&display=swap')
 
 html
     color: $font
@@ -24,6 +24,20 @@ body
     font-size: 40pt
     font-weight: 800
     padding-bottom: 16px
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        font-size: 32pt
+
+.varXlH
+    font-size: 72pt
+    font-weight: 800
+    padding-bottom: 16px
+
+    @media screen and (max-width: $layout-breakpoint-mobile)
+        font-size: 40pt
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        font-size: 32pt
 
 .textCardH
     font-size: 24pt
@@ -87,3 +101,53 @@ p
 
 .uppercase
     text-transform: uppercase
+
+//specifics
+@media screen and (max-width: $layout-breakpoint-xsmall)
+    .responsiveBreak
+        display: none
+
+.textP
+    font-size: 18pt
+    padding-bottom: 16px
+    line-height: 24pt
+    font-weight: 400
+
+    max-width: 870px
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        font-size: 14pt
+        line-height: 20pt
+
+    li
+        margin-bottom: 16px
+
+    i
+        font-style: italic
+
+    a
+        text-decoration: underline
+
+.textH
+    font-size: 18pt
+    padding-bottom: 16px
+    line-height: 24pt
+    font-weight: 600
+
+    max-width: 870px
+
+.textSub
+    font-size: 18pt
+    padding-bottom: 16px
+    line-height: 24pt
+    font-weight: 500
+
+.bib
+    white-space: pre-wrap
+    white-space: -moz-pre-wrap
+    white-space: -pre-wrap
+    white-space: -o-pre-wrap
+    overflow-wrap: break-word
+    word-wrap: break-word
+    word-break: break-word
+    hyphens: auto

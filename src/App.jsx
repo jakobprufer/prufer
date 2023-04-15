@@ -14,6 +14,8 @@ import Pulse from "./Pages/Pulse";
 import FacePerception from "./Pages/FacePerception";
 import Upbound from "./Pages/Upbound";
 import JAV from "./Pages/JAV";
+import AiDesign from "./Pages/AiDesign";
+import Luxury from "./Pages/Luxury";
 
 function App() {
   const router = createBrowserRouter([
@@ -195,6 +197,28 @@ function App() {
         {
           path: "",
           element: <Overview />,
+        },
+      ],
+    },
+    {
+      path: "/thoughts/aidesign",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <AiDesign />,
+        },
+      ],
+    },
+    {
+      path: "/thoughts/luxury",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Luxury />,
         },
       ],
     },

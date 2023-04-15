@@ -10,9 +10,13 @@ export default function CardioGuard() {
   //get current project from data
   const current = projects.find((obj) => obj.projectId === "cardioguard");
 
-  //scroll Indicator
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [activeSection, setActiveSection] = useState("section0");
+  //progress Indicator
+  const [scrollPosition, setScrollPosition] = useState(
+    current.sections[0].progressNum
+  );
+  const [activeSection, setActiveSection] = useState(
+    current.sections[0].sectionId
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,6 +98,7 @@ export default function CardioGuard() {
         <ProgressIndicator
           activeSection={activeSection}
           scrollPosition={scrollPosition}
+          sections={current.sections}
         />
         <div className="projectContent">
           <section className="projectSection" id="section0" name="section0">

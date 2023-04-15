@@ -1,7 +1,11 @@
 .progressIndicator
-    width: 48px
+    width: 32px
     margin-top: 64px
     flex-shrink: 0
+    margin-right: 32px
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        margin-right: 16px
 
 .progressIndicatorInner
     top: calc($filter-header-height + 16px)
@@ -33,7 +37,7 @@
     align-items: center
     padding: 11px 0
     position: relative
-    overflow: hidden
+    overflow-y: hidden
     user-select: none
     cursor: pointer
 
@@ -68,4 +72,4 @@
 .progressNum
 
 .progressExt
-    overflow: clip
+    overflow-y: clip
