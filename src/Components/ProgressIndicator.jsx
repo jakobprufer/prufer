@@ -39,12 +39,13 @@ export default function ProgressIndicator({
       <div className={`stickyWrapper ${attach ? "sticky" : null}`}>
         <div className={`stickyInner`}>
           <div className="progressIndicatorInner">
-            {sections.map((section) => (
+            {sections.map((section, index) => (
               <LinkS
                 to={section.sectionId}
                 smooth={true}
                 duration={800}
                 offset={-120}
+                key={index}
                 className={`progressLog ${
                   activeSection == section.sectionId && "activeSection"
                 }`}

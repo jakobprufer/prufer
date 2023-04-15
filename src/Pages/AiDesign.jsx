@@ -210,7 +210,7 @@ export default function AiDesign() {
               this way.
             </div>
           </section>
-          <section className="projectSection" id="section4" name="section4">
+          <section className="projectSection" id="sectionR" name="sectionR">
             <div className="textH">References</div>
             <ul className="textP bib">
               <li>

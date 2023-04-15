@@ -191,7 +191,7 @@
     "cardLayout": "Text",
     "images": [],
     "cardBackground": "cardioguardtransient",
-    "sections": [{"sectionId": "section1", "progressNum": "1", "progressExt": "Intro & AGI"},{"sectionId": "section2", "progressNum": "2", "progressExt": "What AI might be good at"},{"sectionId": "section3", "progressNum": "3", "progressExt": "What AI might struggle with"},{"sectionId": "section4", "progressNum": "R", "progressExt": "References"}]
+    "sections": [{"sectionId": "section1", "progressNum": "1", "progressExt": "Intro & AGI"},{"sectionId": "section2", "progressNum": "2", "progressExt": "What AI might be good at"},{"sectionId": "section3", "progressNum": "3", "progressExt": "What AI might struggle with"},{"sectionId": "sectionR", "progressNum": "R", "progressExt": "References"}]
   },
   {
     "id": 12,
@@ -210,6 +210,6 @@
     "customImages": [{"name": "card1", "cardSize": "m", "styling": "hoverScale"}],
     "cardImages": ["card1"],
     "cardBackground": "cardioguardtransient",
-    "sections": [{"sectionId": "section1", "progressNum": "1", "progressExt": "Intro"}]
+    "sections": [{"sectionId": "section1", "progressNum": "1", "progressExt": "Evolutionary instincts"},{"sectionId": "section2", "progressNum": "2", "progressExt": "Information overload"},{"sectionId": "section3", "progressNum": "3", "progressExt": "Consumption & signalling"},{"sectionId": "sectionR", "progressNum": "R", "progressExt": "References"}]
   }
 ]
