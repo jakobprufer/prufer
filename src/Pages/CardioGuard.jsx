@@ -94,7 +94,7 @@ export default function CardioGuard() {
           </div>
         </div>
       </div>
-      <div className="contentContainer">
+      <div className="contentContainer marginTop32">
         <ProgressIndicator
           activeSection={activeSection}
           scrollPosition={scrollPosition}

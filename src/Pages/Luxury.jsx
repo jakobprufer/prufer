@@ -169,8 +169,10 @@ export default function Luxury() {
           activeSection={activeSection}
           scrollPosition={scrollPosition}
           sections={current.sections}
+          clickedReference={clickedReference}
+          showReturner={showReturner}
         />
-        <div className="projectContent">
+        <div className="projectContent marginTop32">
           <section className="projectSection" id="section1" name="section1">
             <div className="textP">
               Why does a customer pick a £100.000 watch that indicates time and
@@ -515,17 +517,6 @@ export default function Luxury() {
             </ol>
           </section>
         </div>
-      </div>
-      <div className="fixedButtons">
-        <LinkS
-          className={`sqButton rounded50 ${showReturner ? null : "hidden"}`}
-          to={clickedReference}
-          smooth={true}
-          duration={800}
-          offset={-120}
-        >
-          <RiArrowUpLine />
-        </LinkS>
       </div>
     </div>
   );

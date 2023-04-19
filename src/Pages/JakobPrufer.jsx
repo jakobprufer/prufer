@@ -58,7 +58,7 @@ export default function JakobPrufer() {
           />
         </div>
       </div>
-      <div className="contentContainer">
+      <div className="contentContainer marginTop32">
         <div className="projectContent">
           <div className="album">
             <div className="albumHead">
@@ -107,7 +107,7 @@ export default function JakobPrufer() {
               </div>
             </div>
           </div>
-          <div className="album">
+          <div className="album" id="supasilvaEp">
             <div className="albumHead">
               <SetImg
                 name={"3"}

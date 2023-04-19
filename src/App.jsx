@@ -16,6 +16,13 @@ import Upbound from "./Pages/Upbound";
 import JAV from "./Pages/JAV";
 import AiDesign from "./Pages/AiDesign";
 import Luxury from "./Pages/Luxury";
+import Alles from "./Pages/Alles";
+import BerlinEdit from "./Pages/BerlinEdit";
+import LondonEdit from "./Pages/LondonEdit";
+import Off21Video from "./Pages/Off21Video";
+import SupasilvaTeaser from "./Pages/SupasilvaTeaser";
+import Sets from "./Pages/Sets";
+import Off from "./Pages/Off";
 
 function App() {
   const router = createBrowserRouter([
@@ -141,9 +148,92 @@ function App() {
       ],
     },
     {
+      path: "/dj/sets",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Sets />,
+        },
+      ],
+    },
+    {
+      path: "/dj/off",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Off />,
+        },
+      ],
+    },
+    {
       path: "/video",
       element: <Page />,
       errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Overview />,
+        },
+      ],
+    },
+    {
+      path: "/video/alles",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Alles />,
+        },
+      ],
+    },
+    {
+      path: "/video/berlinedit",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <BerlinEdit />,
+        },
+      ],
+    },
+    {
+      path: "/video/londonedit",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <LondonEdit />,
+        },
+      ],
+    },
+    {
+      path: "/video/off21video",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Off21Video />,
+        },
+      ],
+    },
+    {
+      path: "/video/supasilvateaser",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <SupasilvaTeaser />,
+        },
+      ],
     },
     {
       path: "/photo",

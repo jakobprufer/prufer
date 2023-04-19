@@ -16,12 +16,26 @@
 .border
     border: 1.6px solid black
 
-.padded20
+.maxWMedium
+    max-width: 800px
+    margin: auto
+    width: 100%
+
+.maxWSmall
     max-width: 600px
     margin: auto
+    width: 100%
+
+.maxWExtraSmall
+    max-width: 400px
+    margin: auto
+    width: 100%
 
 .rounded50
     border-radius: 50% !important
+
+.marginTop32
+    margin-top: 32px
 
 .userNone
     user-select: none
@@ -29,6 +43,9 @@
 .difference
     mix-blend-mode: difference
     filter: invert(1)
+
+.paddingTop32
+    padding-top: 32px
 
 .headerFilterBg
     position: fixed
@@ -66,6 +83,7 @@
     // right: max(5vw, calc((100vw - 1200px) / 2 - 88px))
     right: 32px
 
+#muteButton
     @media (pointer:none), (pointer:coarse)
         display: none
 
@@ -76,6 +94,29 @@
     justify-content: center
     height: 48px
     min-width: 48px
+    background: $button
+    border-radius: 1px
+    cursor: pointer
+    user-select: none
+    // border: 1px solid transparent
+
+    &:hover
+        background: $button-hover
+        // border: 1px solid $selected-border
+
+    &.muted
+        filter: invert(1)
+
+    &:active
+        background: $selected
+
+.sqButtonSmall
+    display: flex
+    align-items: center
+    max-width: fit-content
+    justify-content: center
+    height: 32px
+    min-width: 32px
     background: $button
     border-radius: 1px
     cursor: pointer

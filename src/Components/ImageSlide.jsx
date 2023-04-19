@@ -83,6 +83,19 @@ export default function ImageSlide({ images, projectId, ratio }) {
                       type="video/mp4"
                     />
                   </video>
+                ) : images[current].video == "normal" ? (
+                  <video
+                    className="imgSlide"
+                    width="1920"
+                    height="1080"
+                    preload="auto"
+                    controls
+                  >
+                    <source
+                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4`}
+                      type="video/mp4"
+                    />
+                  </video>
                 ) : (
                   <CustomImg
                     name={images[current].name}

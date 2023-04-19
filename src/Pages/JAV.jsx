@@ -29,10 +29,13 @@ export default function JAV() {
               Youth Representation Logo
             </div>
             <div className="bigP">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              fugit temporibus enim excepturi, molestias est voluptatibus dicta
-              placeat, in impedit quidem possimus odio consequatur assumenda
-              aliquam rem alias doloremque dolorum.
+              In Germany, both companies and authorities typically have a youth
+              and trainee representation (JAV) to provide a platform for young
+              employees to express their concerns and interests. This also
+              applies to the German Bundestag, where I was commissioned to
+              redesign the outdated logo of the parliamentary JAV. My focus was
+              on integrating typography into the recognizable silhouette of the
+              Reichstag dome.
             </div>
           </div>
         </div>
@@ -41,7 +44,7 @@ export default function JAV() {
         <p className="bigP">
           Slide to compare my logo (left) to the previous version of the logo:
         </p>
-        <div className="padded20 userNone">
+        <div className="maxWMedium userNone">
           <ReactBeforeSliderComponent
             firstImage={FIRST_IMAGE}
             secondImage={SECOND_IMAGE}

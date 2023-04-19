@@ -43,7 +43,7 @@ export default function Upbound() {
           </div>
         </div>
       </div>
-      <div className="projectContent">
+      <div className="projectContent marginTop32">
         <div className="projectSection">
           <div className="projectInnersection">
             <p className="bigP">

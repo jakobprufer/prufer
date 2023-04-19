@@ -17,13 +17,22 @@ function Page() {
   const category = path.split("/")[1];
   const crumbs = location.pathname.split("/").slice(1);
 
+  //only select projects with visibility not set to none
+  const visibleProjects = projects.filter(
+    (item) => !item.visibility.includes("none")
+  );
+
+  const visibleAllProjects = projects.filter((item) =>
+    item.visibility.includes("all")
+  );
+
   //filter function
-  const [filteredData, setFilteredData] = useState(projects);
+  const [filteredData, setFilteredData] = useState(visibleAllProjects);
 
   useEffect(() => {
     const filtered = category
-      ? projects.filter((item) => item.cat.includes(category))
-      : projects;
+      ? visibleProjects.filter((item) => item.cat.includes(category))
+      : visibleAllProjects;
     setFilteredData(filtered);
   }, [category]);
 

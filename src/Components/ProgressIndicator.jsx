@@ -1,10 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { Link as LinkS } from "react-scroll";
+import { RiArrowUpLine } from "react-icons/ri";
 
 export default function ProgressIndicator({
   activeSection,
   scrollPosition,
   sections,
+  clickedReference,
+  showReturner,
 }) {
   // attach progress indicator
   const [attach, setAttach] = useState(false);
@@ -66,6 +69,17 @@ export default function ProgressIndicator({
             ))}
           </div>
         </div>
+        <LinkS
+          className={`sqButtonSmall returner rounded50 ${
+            showReturner ? null : "hidden"
+          }`}
+          to={clickedReference}
+          smooth={true}
+          duration={800}
+          offset={-120}
+        >
+          <RiArrowUpLine />
+        </LinkS>
       </div>
     </div>
   );

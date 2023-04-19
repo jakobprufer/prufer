@@ -12,7 +12,7 @@ export const filter = [
   {
     id: 2,
     route: "design",
-    title: "Design",
+    title: "Design / Dev",
   },
   {
     id: 3,
@@ -34,11 +34,11 @@ export const filter = [
     route: "thoughts",
     title: "Thoughts",
   },
-  {
-    id: 7,
-    route: "inspiration",
-    title: "Inspiration",
-  },
+  // {
+  //   id: 7,
+  //   route: "inspiration",
+  //   title: "Inspiration",
+  // },
 ];
 
 export const sort = [

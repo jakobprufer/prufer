@@ -66,7 +66,7 @@ export default function Pulse() {
           />
         </div>
       </div>
-      <div className="projectContent">
+      <div className="projectContent marginTop32">
         <div className="projectSection">
           <div className="projectInnersection">
             <p className="bigP">
@@ -96,12 +96,12 @@ export default function Pulse() {
               for comparison:
             </p>
           </div>
+          <ImageSlide
+            images={current.images}
+            projectId={current.projectId}
+            ratio="c32"
+          />
         </div>
-        <ImageSlide
-          images={current.images}
-          projectId={current.projectId}
-          ratio="c32"
-        />
       </div>
     </div>
   );

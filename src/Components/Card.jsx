@@ -2,15 +2,19 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SetImg from "./SetImg";
 import CustomImg from "./CustomImg";
+import HoverVideoPlayer from "react-hover-video-player";
+import { useRef } from "react";
 
 export default function Card({ projects }) {
+  const hoverVideoRef = useRef();
+
   return (
     <motion.div layout className={`card`}>
       {projects.cardLayout == "Grid" ? (
         // Standard Card Layout
         <Link
           className="cardContainer"
-          to={`/${projects.cat}/${projects.projectId}`}
+          to={`/${projects.cat[0]}/${projects.projectId}`}
         >
           <div className="cardHead">
             <div className="smallH">{projects.title}</div>
@@ -50,7 +54,7 @@ export default function Card({ projects }) {
         // Custom Card Layout
         <Link
           className="cardContainer"
-          to={`/${projects.cat}/${projects.projectId}`}
+          to={`/${projects.cat[0]}/${projects.projectId}`}
         >
           <div className="cardHead">
             <div className="smallH">{projects.title}</div>
@@ -86,11 +90,11 @@ export default function Card({ projects }) {
             </div>
           </div>
         </Link>
-      ) : (
+      ) : projects.cardLayout == "Text" ? (
         //Text layout
         <Link
           className="cardContainer"
-          to={`/${projects.cat}/${projects.projectId}`}
+          to={`/${projects.cat[0]}/${projects.projectId}`}
         >
           <div className="cardHead">
             <div className="smallH"></div>
@@ -119,7 +123,58 @@ export default function Card({ projects }) {
             </div>
           </div>
         </Link>
-      )}
+      ) : projects.cardLayout == "Video" ? (
+        // Video layout
+        <Link
+          className="cardContainer"
+          ref={hoverVideoRef}
+          to={`/${projects.cat[0]}/${projects.projectId}`}
+        >
+          <div className="cardHead">
+            <div className="smallH">{projects.title}</div>
+            {/* <div className="description">{projects.description}</div> */}
+            <div className="cardData">
+              <span className="cardCategory">{projects.displayedCat}</span>,{" "}
+              <span className="cardYear">
+                {projects.date.toString().substring(0, 4)}{" "}
+              </span>
+              {projects.displayedTools ? (
+                <span className="cardTools">({projects.displayedTools})</span>
+              ) : null}
+            </div>
+          </div>
+          <div className="cardContent">
+            <HoverVideoPlayer
+              videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4`}
+              pausedOverlay={
+                <img
+                  src={`/Assets/${projects.projectId}/m/${projects.cardThumb}`}
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
+              loadingOverlay={
+                <div className="loading-overlay">
+                  <div className="loading-spinner" />
+                </div>
+              }
+              loadingStateTimeout={1000}
+              hoverTarget={hoverVideoRef}
+              restartOnPaused={true}
+              style={{
+                width: "100%",
+                paddingTop: "66.67%",
+              }}
+              sizingMode="container"
+            />
+          </div>
+        </Link>
+      ) : null}
     </motion.div>
   );
 }
