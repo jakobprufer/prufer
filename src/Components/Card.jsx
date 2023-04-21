@@ -145,7 +145,7 @@ export default function Card({ projects }) {
           </div>
           <div className="cardContent">
             <HoverVideoPlayer
-              videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4`}
+              videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4#t=0.001`}
               pausedOverlay={
                 <img
                   src={`/Assets/${projects.projectId}/m/${projects.cardThumb}`}

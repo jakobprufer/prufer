@@ -31,8 +31,8 @@ export const filter = [
   },
   {
     id: 6,
-    route: "thoughts",
-    title: "Thoughts",
+    route: "writing",
+    title: "Writing",
   },
   // {
   //   id: 7,

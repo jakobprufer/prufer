@@ -79,7 +79,7 @@ export default function ImageSlide({ images, projectId, ratio }) {
                     loop
                   >
                     <source
-                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4`}
+                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4#t=0.001`}
                       type="video/mp4"
                     />
                   </video>
@@ -92,7 +92,7 @@ export default function ImageSlide({ images, projectId, ratio }) {
                     controls
                   >
                     <source
-                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4`}
+                      src={`/Assets/${projectId}/${projectId}${images[current].name}.mp4#t=0.001`}
                       type="video/mp4"
                     />
                   </video>

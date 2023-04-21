@@ -27,7 +27,7 @@ const FlipAbout = () => {
   return (
     <div className="headerLink flipAbout" onMouseLeave={handleMouseLeave}>
       {/* <div>{textMap[textState]}</div> */}
-      <div>about me</div>
+      <div>about me / contact</div>
     </div>
   );
 };

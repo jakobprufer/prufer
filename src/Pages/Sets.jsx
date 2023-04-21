@@ -1,17 +1,9 @@
 import { useState } from "react";
 import SetImg from "../Components/SetImg";
 import projects from "../Data/Projects.json";
-import {
-  RiSpotifyFill,
-  RiAppleFill,
-  RiSoundcloudFill,
-  RiYoutubeFill,
-  RiAmazonFill,
-} from "react-icons/ri";
 import Player from "../Components/Player";
 import ProjectLinks from "../Components/ProjectLinks";
 import MuteButton from "../Components/MuteButton";
-import ProgressIndicator from "../Components/ProgressIndicator";
 
 export default function Sets() {
   //get current project from data
@@ -54,8 +46,8 @@ export default function Sets() {
                   <span className="smallH">Marler Road Vinyl Set</span>
                   <span className="bigP"> (2022)</span>
                   <div className="bigP playerDescription">
-                    Vinyl only. Mostly dark, hypnotic techno. Bounce is the most
-                    important selection criteria for me. 1 h total.
+                    Vinyl only. Mostly dark, hypnotic techno. Bounce as the most
+                    important selection criteria. 1 h total.
                   </div>
                 </div>
 
@@ -160,7 +152,7 @@ export default function Sets() {
           <div className="album">
             <div className="albumHead">
               <SetImg
-                name={"technoshowcase01"}
+                name={"technoshowcase0"}
                 projectId={"sets"}
                 ratio={"c11"}
                 size={"m"}
@@ -227,7 +219,8 @@ export default function Sets() {
                   <span className="smallH">T&A Melodic House Showcase</span>
                   <span className="bigP"> (2018)</span>
                   <div className="bigP playerDescription">
-                    Melodic house showcase with Evan from the T&A Crew. 55 mins
+                    Melodic house showcase with Evan from the T&A Crew. The
+                    first half might be my favourite bit of all mixes. 55 mins
                     total.
                   </div>
                 </div>

@@ -32,13 +32,14 @@ export default function LondonEdit() {
           <div className="c916">
             <video
               className="img"
-              width="1080"
-              height="1080"
+              width="720"
+              height="1280"
               preload="auto"
+              controlslist="nofullscreen nodownload"
               controls
             >
               <source
-                src={`/Assets/${current.projectId}/londoneditmain.mp4`}
+                src={`/Assets/${current.projectId}/londoneditmain.mp4#t=0.001`}
                 type="video/mp4"
               />
             </video>

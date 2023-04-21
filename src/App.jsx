@@ -280,7 +280,7 @@ function App() {
       ],
     },
     {
-      path: "/thoughts",
+      path: "/writing",
       element: <Page />,
       errorElement: <Error />,
       children: [
@@ -291,7 +291,7 @@ function App() {
       ],
     },
     {
-      path: "/thoughts/aidesign",
+      path: "/writing/aidesign",
       element: <Page />,
       errorElement: <Error />,
       children: [
@@ -302,7 +302,7 @@ function App() {
       ],
     },
     {
-      path: "/thoughts/luxury",
+      path: "/writing/luxury",
       element: <Page />,
       errorElement: <Error />,
       children: [

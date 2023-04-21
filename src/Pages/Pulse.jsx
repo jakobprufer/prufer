@@ -24,7 +24,10 @@ export default function Pulse() {
               preload="auto"
               loop
             >
-              <source src="/Assets/pulse/fbheader.mp4" type="video/mp4" />
+              <source
+                src="/Assets/pulse/fbheader.mp4"
+                type="video/mp4#t=0.001"
+              />
             </video>
           </div>
         </div>

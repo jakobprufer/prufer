@@ -191,7 +191,7 @@
   {
     "id": 11,
     "visibility": "all",
-    "cat": ["thoughts"],
+    "cat": ["writing"],
     "displayedCat": "Short Essay",
     "date": 202304,
     "dateadded": 202304,
@@ -208,7 +208,7 @@
   {
     "id": 12,
     "visibility": "all",
-    "cat": ["thoughts"],
+    "cat": ["writing"],
     "displayedCat": "Blog Post",
     "date": 202204,
     "dateadded": 202304,
@@ -324,9 +324,9 @@
     "title": "DJ Sets",
     "cardLayout": "Grid",
     "cardGrid": "g1",
-    "images": [{ "name": "lockdownteaser", "video": "normal", "description": "Lockdown Teaser"},{ "name": "personalteaser", "video": "normal", "description": "Personal Teaser"}],
-    "customImages": [{ "name": "cardimage", "size": "m", "ratio": "c32", "description": ""}],
-    "cardImages": ["cardimage"]
+    "images": [],
+    "customImages": [{ "name": "cardimage3", "size": "m", "ratio": "c32", "description": ""}],
+    "cardImages": ["cardimage3"]
   },
   {
     "id": 19,
@@ -339,11 +339,12 @@
     "reach": 500,
     "projectId": "off",
     "title": "Off - Warehouse Raves",
-    "cardLayout": "Grid",
+    "cardLayout": "Custom",
     "cardGrid": "g1",
-    "images": [{ "name": "lockdownteaser", "video": "normal", "description": "Lockdown Teaser"},{ "name": "personalteaser", "video": "normal", "description": "Personal Teaser"}],
-    "customImages": [{ "name": "cardimage1", "size": "m", "ratio": "c32", "description": ""}],
-    "cardImages": ["cardimage1"]
+    "images": [],
+    "images23": [{ "name": "23a", "description": "Matt Migz serving vinyl DnB in room 2"},{ "name": "23b", "description": "Fairy lights guided guests through the woods - this is the queue in front of the entry gate"},{ "name": "23c", "description": "Into the off"},{ "name": "23d", "description": "Beer pong room before the party"},{ "name": "23e", "description": "Off23 signature wall"},{ "name": "23f", "description": "Room 1 at about 5am with graffiti by Patrik & Yoram"},{ "name": "23g", "description": "Conversation in front of the off light sign"},{ "name": "23h", "video": "auto", "description": "Music-triggered lighting tubes in room 2"},{ "name": "23i", "description": "Power plan for Off23"},{ "name": "23j", "description": "Arrival map for guests"},{ "name": "23k", "description": "Nick01 as MC in room 1"},{ "name": "23l", "description": "Matt Miggz spinning"}],
+    "customImages": [{ "name": "card1", "cardSize": "m", "styling": "hoverShrink"},{ "name": "card3", "cardSize": "m", "styling": "hoverScale"},{ "name": "card2", "cardSize": "m", "styling": ""}],
+    "cardImages": ["card1", "card3", "card2"]
   },
   {
     "id": 20,
@@ -358,7 +359,7 @@
     "title": "T&A",
     "cardLayout": "Grid",
     "cardGrid": "g1",
-    "images": [{ "name": "lockdownteaser", "video": "normal", "description": "Lockdown Teaser"},{ "name": "personalteaser", "video": "normal", "description": "Personal Teaser"}],
+    "images": [],
     "customImages": [{ "name": "card2", "size": "m", "ratio": "c32", "description": ""}],
     "cardImages": ["card2"]
   }

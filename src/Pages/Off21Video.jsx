@@ -38,7 +38,7 @@ export default function Off21Video() {
               controls
             >
               <source
-                src={`/Assets/${current.projectId}/off21videomain.mp4`}
+                src={`/Assets/${current.projectId}/off21videomain.mp4#t=0.001`}
                 type="video/mp4"
               />
             </video>

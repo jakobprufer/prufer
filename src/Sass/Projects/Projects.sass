@@ -84,6 +84,34 @@
 .sectionTitle
     padding-bottom: 16px
 
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: #000000a0
+    z-index: 100
+    display: flex
+    justify-content: center
+
+.modalContent
+    display: flex
+    flex-direction: row-reverse
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        flex-direction: column
+        align-items: flex-end
+
+.modalCloser
+    width: 64px
+
+.modalVideo
+    width: calc( 100% - 72px )
+
+    @media screen and (max-width: $layout-breakpoint-xsmall)
+        width: 100%
+
 //jakob prufer
 .jakobprufer
     .projectInfo
@@ -144,6 +172,31 @@
 .offAftermovies
     padding-top: 32px
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
     gap: 16px
-    max-width: 1000px
+    max-width: 800px
+
+.offAftermovie
+    position: relative
+
+.offCaption
+    position: absolute
+    bottom: 0
+    padding: 16px
+    color: $background
+
+.t-18-800
+    font-size: 18pt
+    font-weight: 800
+
+.t-18-400
+    font-size: 18pt
+    font-weight: 400
+
+.t-14-800
+    font-size: 14pt
+    font-weight: 800
+
+.t-14-400
+    font-size: 14pt
+    font-weight: 400

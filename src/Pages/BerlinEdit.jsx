@@ -34,9 +34,10 @@ export default function BerlinEdit() {
               height="1080"
               preload="auto"
               controls
+              controlslist="nofullscreen nodownload"
             >
               <source
-                src={`/Assets/${current.projectId}/berlineditmain.mp4`}
+                src={`/Assets/${current.projectId}/berlineditmain.mp4#t=0.001`}
                 type="video/mp4"
               />
             </video>
