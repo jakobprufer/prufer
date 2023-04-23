@@ -4,6 +4,7 @@ import {
   RiSoundcloudFill,
   RiYoutubeFill,
   RiAmazonFill,
+  RiInstagramFill,
 } from "react-icons/ri";
 
 export default function ProjectLinks({
@@ -16,6 +17,7 @@ export default function ProjectLinks({
   youtube,
   soundcloud,
   amazon,
+  instagram,
 }) {
   return (
     <div className="projectLinks">
@@ -47,6 +49,16 @@ export default function ProjectLinks({
       {amazon ? (
         <a href={amazon} target="_blank" rel="noreferrer" className="sqButton">
           <RiAmazonFill className="socialIcon" />
+        </a>
+      ) : null}
+      {instagram ? (
+        <a
+          href={instagram}
+          target="_blank"
+          rel="noreferrer"
+          className="sqButton"
+        >
+          <RiInstagramFill className="socialIcon" />
         </a>
       ) : null}
       {link1 ? (

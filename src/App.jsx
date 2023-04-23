@@ -23,6 +23,7 @@ import Off21Video from "./Pages/Off21Video";
 import SupasilvaTeaser from "./Pages/SupasilvaTeaser";
 import Sets from "./Pages/Sets";
 import Off from "./Pages/Off";
+import Turntandable from "./Pages/Turntandable";
 
 function App() {
   const router = createBrowserRouter([
@@ -166,6 +167,17 @@ function App() {
         {
           path: "",
           element: <Off />,
+        },
+      ],
+    },
+    {
+      path: "/dj/turntandable",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Turntandable />,
         },
       ],
     },

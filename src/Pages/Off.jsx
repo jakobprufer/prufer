@@ -243,6 +243,11 @@ export default function Off() {
                 </li>
               </ul>
             </div>
+            <ImageSlide
+              images={current.images21}
+              projectId={current.projectId}
+              ratio="c32"
+            />
           </div>
           <div className="projectSection marginTop32">
             <div className="smallH sectionTitle">Off20</div>
@@ -276,6 +281,11 @@ export default function Off() {
                 </li>
               </ul>
             </div>
+            <ImageSlide
+              images={current.images20}
+              projectId={current.projectId}
+              ratio="c169"
+            />
           </div>
         </div>
       </div>

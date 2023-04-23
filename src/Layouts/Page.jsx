@@ -14,8 +14,9 @@ function Page() {
   //get category and crumbs from router location
   const location = useLocation();
   const path = location.pathname;
-  const category = path.split("/")[1];
   const crumbs = location.pathname.split("/").slice(1);
+  const crumbCat = path.split("/")[1];
+  const category = crumbs.length == 1 && path.split("/")[1];
 
   //only select projects with visibility not set to none
   const visibleProjects = projects.filter(
@@ -100,7 +101,16 @@ function Page() {
 
   return (
     <Fragment>
-      <ScrollRestoration />
+      <ScrollRestoration
+        getKey={(location, matches) => {
+          const paths = ["/"];
+          return paths.includes(location.pathname)
+            ? // home and notifications restore by pathname
+              location.pathname
+            : // everything else by location like the browser
+              location.key;
+        }}
+      />
       <div className="page">
         <div className="headerFilterBg"></div>
         <div className="headerFilter">
@@ -114,7 +124,7 @@ function Page() {
             crumbs={crumbs}
             sortSelect={sortSelect}
             setSortSelect={setSortSelect}
-            category={category}
+            category={crumbCat}
           />
         </div>
         <div className="content">
