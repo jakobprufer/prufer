@@ -361,7 +361,7 @@
     "title": "T&A",
     "cardLayout": "Grid",
     "cardGrid": "g1",
-    "images": [{ "name": "card1", "description": ""},{ "name": "pulse", "description": ""},{ "name": "merchpack", "description": ""},{ "name": "elmo", "description": ""}],
+    "images": [{ "name": "card1", "description": ""},{ "name": "pulse", "description": ""},{ "name": "merchpack", "description": ""},{ "name": "elmo", "description": ""},{ "name": "off", "description": ""}],
     "customImages": [{ "name": "card2", "size": "m", "ratio": "c32", "description": ""}],
     "cardImages": ["card2"]
   }
