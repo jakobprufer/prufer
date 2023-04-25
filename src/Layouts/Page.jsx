@@ -140,9 +140,9 @@ function Page() {
           {/* </div> */}
         </div>
         {/* </div> */}
-        {/* <div className={`aboutCont ${showAbout ? null : "away"}`}>
+        <div className={`aboutCont ${showAbout ? null : "away"}`}>
           <About showAbout={showAbout} />
-        </div> */}
+        </div>
         {/* <AnimatePresence>
           {showAbout && (
             <motion.div
