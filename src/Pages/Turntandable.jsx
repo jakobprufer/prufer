@@ -24,11 +24,11 @@ export default function Turntandable() {
           <p className="bigP">
             Aside from djing, we’ve produced output such as remixes and edits,
             live visuals, light shows, <Link to="/dj/sets">showcase sets</Link>,
-            curated playlists. Musically, our focus is techno, but we’ve never
-            been limited to the genre, wandering through trap hiphop, RnB, afro
-            house and other electronic genres depending on the venue and the
-            mood of the party. We are always balancing on a knives edge between
-            recognisable mainstream and exciting underground sounds.
+            and curated playlists. Musically, our focus is techno, but we’ve
+            never been limited to the genre, wandering through trap hiphop, RnB,
+            afro house and other electronic styles depending on the venue and
+            the mood of the party. We are always balancing on a knives edge
+            between recognisable mainstream and exciting underground sounds.
           </p>
           <p className="bigP">
             The goal we set for ourselves back in 2017 remains widely unchanged:

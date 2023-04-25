@@ -110,7 +110,7 @@ export default function Off() {
             <div>
               <div className="bigH">Off - Warehouse Raves</div>
               <p className="bigP">
-                The “off” rave series, hosted in abandoned locations close to
+                The “off” rave series, hosted in abandoned locations around
                 Berlin, was initially started by my friend Evan and me to
                 celebrate our birthdays each September.
               </p>
@@ -192,7 +192,7 @@ export default function Off() {
                   techno / electronic
                 </li>
                 <li>
-                  we had other djs than T&A on, including{" "}
+                  added{" "}
                   <a
                     href="https://www.instagram.com/matt_migz/"
                     target="_blank"
@@ -209,7 +209,8 @@ export default function Off() {
                   and{" "}
                   <a href="https://www.instagram.com/_romnn/" target="_blank">
                     Romnn
-                  </a>
+                  </a>{" "}
+                  to the line up next to T&A
                 </li>
               </ul>
             </div>
@@ -225,21 +226,24 @@ export default function Off() {
             <div className="bigP">
               <ul className="bulletlist">
                 <li>
-                  Got scared when multiple police vans pulled up right by the
-                  forest - turns out they were there because someone brought a
-                  weapon to a nearby village fair
+                  were surprised to see multiple police vans pulled up right by
+                  the forest - it turned out they were there because someone
+                  brought a weapon to a nearby village fair. We had to delay the
+                  party and guide guest around the police.
                 </li>
                 <li>
-                  Partied in a big abandoned warehouse with scaffolding, plants
-                  and a projector throwing visuals on the wall behind the dj
+                  partied in a big abandoned warehouse with scaffolding as room
+                  separation, plants as decoration and a projector for visuals
+                  on the wall behind the dj
                 </li>
                 <li>
-                  Were told that the music was audible throughout the whole
-                  nearby neighbourhood at 5am - the village fair might be the
-                  reason why nobody called the police on us
+                  were told that the music was audible throughout the whole
+                  nearby neighbourhood at 5am - the village fair might have been
+                  the reason why nobody called the police on us
                 </li>
                 <li>
                   Nearly got attacked by wild boars while scouting for locations
+                  :)
                 </li>
               </ul>
             </div>
@@ -273,11 +277,11 @@ export default function Off() {
                 </li>
                 <li>
                   Only barely avoided detection by the security guard when he
-                  came arrived we were packing up in the morning
+                  arrived while we were packing up in the morning
                 </li>
                 <li>
                   Did this for the first time - had some of the most stressful
-                  weeks but also the biggest surprise for the crowd
+                  weeks but also managed to surprise our friends
                 </li>
               </ul>
             </div>

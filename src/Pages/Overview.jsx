@@ -1,5 +1,5 @@
 import { Fragment, useEffect } from "react";
-import { motion, layout } from "framer-motion";
+import { motion, layout, AnimatePresence } from "framer-motion";
 import Card from "../Components/Card";
 import { useOutletContext } from "react-router-dom";
 import Player from "../Components/Player";

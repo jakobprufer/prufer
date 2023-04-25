@@ -3,9 +3,11 @@ import { useLocation, Link, Outlet, ScrollRestoration } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import Filter from "../Components/Filter";
+import { AnimatePresence } from "framer-motion";
 
 import projects from "../Data/Projects.json";
 import Overview from "../Pages/Overview";
+import About from "../Pages/About";
 
 function Page() {
   //enabling :active styling on mobile - not sure if needed??
@@ -50,6 +52,9 @@ function Page() {
     }
     return 0;
   });
+
+  //toggle about section
+  const [showAbout, setShowAbout] = useState(false);
 
   // //filter select
   // const [filterSelect, setFilterSelect] = useState(location);
@@ -112,21 +117,44 @@ function Page() {
         }}
       />
       <div className="page">
-        <div className="headerFilterBg"></div>
+        {/* <div className="headerFilterBg"></div> */}
+        {/* <div className="headerFilter"> */}
         <div className="headerFilter">
-          <Header
-            sortSelect={sortSelect}
-            setSortSelect={setSortSelect}
-            crumbs={crumbs}
-          />
-          <Filter
-            location={location}
-            crumbs={crumbs}
-            sortSelect={sortSelect}
-            setSortSelect={setSortSelect}
-            category={crumbCat}
-          />
+          <div className="headerCont">
+            <Header
+              sortSelect={sortSelect}
+              setSortSelect={setSortSelect}
+              crumbs={crumbs}
+              showAbout={showAbout}
+              setShowAbout={setShowAbout}
+            />
+          </div>
+          <div className="filterCont">
+            <Filter
+              location={location}
+              crumbs={crumbs}
+              sortSelect={sortSelect}
+              setSortSelect={setSortSelect}
+              category={crumbCat}
+            />
+          </div>
         </div>
+        {/* </div> */}
+        {/* <div className={`aboutCont ${showAbout ? null : "away"}`}>
+          <About showAbout={showAbout} />
+        </div> */}
+        {/* <AnimatePresence>
+          {showAbout && (
+            <motion.div
+              className="aboutCont"
+              initial={{ y: "100vh" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100vh" }}
+            >
+              <About />
+            </motion.div>
+          )}
+        </AnimatePresence> */}
         <div className="content">
           <Outlet context={sortedData} />
         </div>

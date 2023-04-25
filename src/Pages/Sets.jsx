@@ -52,7 +52,7 @@ export default function Sets() {
                 </div>
 
                 <ProjectLinks soundcloud="https://soundcloud.com/turntandable/marlerroad" />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <Player
                       source={"/Assets/sets/audio/marlerroad.mp3"}
@@ -62,6 +62,7 @@ export default function Sets() {
                       id={"0"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -93,7 +94,7 @@ export default function Sets() {
                   soundcloud="https://soundcloud.com/turntandable/testing"
                   youtube="https://youtu.be/0-MEerfRQus"
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <Player
                       source={"/Assets/sets/audio/testing.mp3"}
@@ -103,6 +104,7 @@ export default function Sets() {
                       id={"1"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -133,7 +135,7 @@ export default function Sets() {
                   link1="https://www.youtube.com/watch?v=D7UtSadmm-o"
                   link1Title="Watch the set video"
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <Player
                       source={"/Assets/sets/audio/technoshowcase.mp3"}
@@ -175,7 +177,7 @@ export default function Sets() {
                   link1="https://www.youtube.com/watch?v=I5B0QOcyGw8"
                   link1Title="Watch the set video"
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <div className="playerTitle">Techno Showcase Part 1</div>
                     <Player
@@ -186,6 +188,7 @@ export default function Sets() {
                       id={"3a"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                   <div className="albumPlayer">
@@ -198,6 +201,7 @@ export default function Sets() {
                       id={"3b"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -229,7 +233,7 @@ export default function Sets() {
                   link1="https://youtu.be/fEQE7-gxziY"
                   link1Title="Watch the set video"
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <Player
                       source={"/Assets/sets/audio/houseshowcase.mp3"}
@@ -239,6 +243,7 @@ export default function Sets() {
                       id={"4"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -268,7 +273,7 @@ export default function Sets() {
                 </div>
 
                 <ProjectLinks soundcloud="https://soundcloud.com/turntandable/pulse-radio-m006-w-ta" />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <Player
                       source={"/Assets/sets/audio/pulsetrap.mp3"}
@@ -278,6 +283,7 @@ export default function Sets() {
                       id={"5"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>

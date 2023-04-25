@@ -58,16 +58,15 @@ export default function Upbound() {
               for background audio and a yellow area for custom requests.
             </p>
             <p className="bigP">
-              With two friends I started working on the development of the
-              platform, me working on and testing interface prototypes while the
-              others worked mostly on the back end including a CMS, license pdf
-              generator, mailing system, checkout and payment gateway as well as
-              custom waveform generator. This being my first UI project, it
-              taught me important lessons about considering feedback,
-              responsibility and spacing - many of these considerations only
-              became clear when I started coordinating the development with my
-              friends and they asked questions about higher resolution
-              prototypes I hadn't even thought of.
+              Two friends started working on the development of the platform,
+              setting up the back end including a CMS, license pdf generator,
+              mailing system, checkout and payment gateway as well as custom
+              waveform generator. This being my first UI project, it taught me
+              important lessons about considering ux feedback, responsiveness
+              and spacing - many of these considerations only became clear when
+              I started coordinating the development with my friends and they
+              asked questions about higher resolution prototypes I hadn't even
+              thought of.
             </p>
             <p className="bigP">
               I also filmed and edited a video trailer for the concept store and
@@ -78,7 +77,7 @@ export default function Upbound() {
         <ImageSlide
           images={current.images}
           projectId={current.projectId}
-          ratio="c32"
+          ratio="c169"
         />
       </div>
     </div>

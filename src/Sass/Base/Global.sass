@@ -50,22 +50,43 @@
 .paddingTop32
     padding-top: 32px
 
-.headerFilterBg
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 9
-    width: 100vw
-    height: 0px
-    padding-bottom: 115px
+// .headerFilterBg
+//     position: fixed
+//     top: 0
+//     left: 0
+//     z-index: 9
+//     width: 100vw
+//     height: 0px
+//     padding-bottom: 115px
+//     display: none
 
 .headerFilter
+    width: 100%
+    max-width: inherit
+
+.headerCont
     position: fixed
     width: 100%
     max-width: inherit
     top: 0
     background: $background
+    z-index: 12
+
+.filterCont
+    position: fixed
+    width: 100%
+    max-width: inherit
+    top: 64px
+    background: $background
     z-index: 10
+
+// .header
+//     z-index: 12
+//     background: $background
+//     position: relative
+
+// .filter
+//     background: $background
 
 .content
     margin-top: $filter-header-height
@@ -167,6 +188,8 @@
     &.turned
         transform: rotate(180deg)
         transition: 0.2s
+
+.iconMedium
 
 .iconExtraBig
     font-size: 48px

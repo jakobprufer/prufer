@@ -104,6 +104,7 @@ export default function Player({
   selectedCategory,
   muted,
   setMuted,
+  download,
 }) {
   const barRef = useRef();
   const [audioElement, audioProps] = useAudio(
@@ -165,9 +166,11 @@ export default function Player({
           ></div>
           <div className="pLabel">{title}</div>
         </div>
-        <div onClick={() => handleDownload(filePath)} className="sqButton">
-          <RiDownloadLine className="socialIcon" />
-        </div>
+        {download && (
+          <div onClick={() => handleDownload(filePath)} className="sqButton">
+            <RiDownloadLine className="socialIcon" />
+          </div>
+        )}
         {/* normal mute function without global button */}
         {/* {showMute && (
           <div className="pMuteButton" onClick={audioProps.toggleMute}>

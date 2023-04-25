@@ -1,11 +1,17 @@
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import { RiArrowDownLine } from "react-icons/ri";
+import { RiArrowDownLine, RiCloseLine } from "react-icons/ri";
 
 import { sort } from "../Data/FilterData";
 import FlipAbout from "./FlipAbout";
 
-export default function Header({ sortSelect, setSortSelect, crumbs }) {
+export default function Header({
+  sortSelect,
+  setSortSelect,
+  crumbs,
+  showAbout,
+  setShowAbout,
+}) {
   //mobile sort open
   const [showSortM, setShowSortM] = useState(false);
 
@@ -17,9 +23,23 @@ export default function Header({ sortSelect, setSortSelect, crumbs }) {
     <Fragment>
       <div className={`header ${crumbs.length > 1 ? "headerTucked" : null}`}>
         {/* <div className="headerInner"> */}
-        <div className="headerLink name">Jakob Prufer</div>
-        {/* <div className="headerLink">Musician</div> */}
-        <FlipAbout />
+        <a
+          href="mailto:jakob@prufer.co"
+          className="headerLink headerName pointer"
+        >
+          <span>Jakob Prufer</span>
+        </a>
+        {/* <div
+          className="headerLink flipAbout pointer"
+          onClick={() => {
+            setShowAbout(!showAbout);
+          }}
+        >
+          {showAbout ? <RiCloseLine className="iconMedium" /> : "about me"}
+          about me
+        </div> */}
+        <div className="headerLink flipAbout">things I've made</div>
+        {/* <FlipAbout /> */}
         <div className={`sortMenuM ${crumbs.length > 1 ? "hidden" : null}`}>
           <div className="sortByM" onClick={toggleSortM}>
             Sort by&nbsp;

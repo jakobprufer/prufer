@@ -20,7 +20,7 @@ export default function SupasilvaTeaser() {
         <div>
           <div className="bigH">Supasilva Teaser</div>
           <p className="bigP">
-            These are two teasers I made to help promoting the{" "}
+            These are two teasers I edited to promote the{" "}
             <HashLink
               smooth
               scroll={(el) => scrollWithOffset(el)}

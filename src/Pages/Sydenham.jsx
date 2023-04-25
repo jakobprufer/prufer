@@ -11,8 +11,6 @@ export default function Sydenham() {
       <div className="projectHead">
         <div>
           <div className="bigH">Sydenham Hill Autumn</div>
-          <div className="tinyH">Date:</div>
-          <div className="bigP">10/2019</div>
           <p className="bigP">
             Sydenham Hill Wood and Dulwich Wood comprise a vast green expanse
             situated in semi-urban South East London. Wander into them and you
@@ -32,10 +30,10 @@ export default function Sydenham() {
           <p className="bigP">
             Sydenham Hill Station by the woods feels like it belongs in a sleepy
             little village, again it is hard to imagine that the trains
-            departing from there take you to Brixton within 7 minutes. The
+            departing from here take you to Brixton within 7 minutes. The
             station leads right into another tunnel, this one still in use. From
-            the footbridge you can watch trains appearing as tiny dots at the
-            far end of the tunnel.
+            the footbridge you can watch trains appear as tiny dots at the far
+            end of the tunnel.
           </p>
         </div>
       </div>

@@ -88,7 +88,7 @@ export default function JakobPrufer() {
                     "https://amazon.co.uk/music/player/albums/B08JGC8SP1?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_azP8Nol1897yg5Q3kI8ABfcv3"
                   }
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <div className="playerTitle">
                       Jakob Prufer - 20 (prod. pizzle)
@@ -101,6 +101,7 @@ export default function JakobPrufer() {
                       id={"0"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -133,7 +134,7 @@ export default function JakobPrufer() {
                     "https://amazon.co.uk/music/player/albums/B08VGYB8KM?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_Us19Ge6iAxADA1MKMeRaTh0Ar"
                   }
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <div className="playerTitle">
                       Nick01 - Lockdown (prod. pizzle)
@@ -148,6 +149,7 @@ export default function JakobPrufer() {
                       id={"1"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                   <div className="albumPlayer">
@@ -164,6 +166,7 @@ export default function JakobPrufer() {
                       id={"2"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                   <div className="albumPlayer">
@@ -196,6 +199,7 @@ export default function JakobPrufer() {
                       id={"4"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                   <div className="albumPlayer">
@@ -212,6 +216,7 @@ export default function JakobPrufer() {
                       id={"5"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>
@@ -243,7 +248,7 @@ export default function JakobPrufer() {
                     "https://amazon.co.uk/music/player/albums/B0BCNYCZVJ?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_UhrETiFz0Dy1FetJphl3wGnL7"
                   }
                 />
-                <div className="albumPlayers">
+                <div className="albumPlayers ptm">
                   <div className="albumPlayer">
                     <div className="playerTitle">
                       Toni Newski & Jakob Prufer - Mitternacht (prod. pizzle &
@@ -259,6 +264,7 @@ export default function JakobPrufer() {
                       id={"6"}
                       muted={muted}
                       setMuted={setMuted}
+                      download
                     />
                   </div>
                 </div>

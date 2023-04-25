@@ -1,5 +1,9 @@
 import "./Sass/Main.sass";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import Page from "./Layouts/Page";
 import Error from "./Pages/Error";
 import { toHaveFormValues } from "@testing-library/jest-dom/dist/matchers";
@@ -24,6 +28,12 @@ import SupasilvaTeaser from "./Pages/SupasilvaTeaser";
 import Sets from "./Pages/Sets";
 import Off from "./Pages/Off";
 import Turntandable from "./Pages/Turntandable";
+import MusicProduction from "./Pages/MusicProduction";
+
+const UXBlog = () => {
+  window.location.href = "https://pruferux.com";
+  return null;
+};
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +47,11 @@ function App() {
           element: <Overview />,
         },
       ],
+    },
+    {
+      path: "/ux",
+      element: <UXBlog />,
+      errorElement: <Error />,
     },
     {
       path: "/music",
@@ -57,6 +72,17 @@ function App() {
         {
           path: "",
           element: <JakobPrufer />,
+        },
+      ],
+    },
+    {
+      path: "/music/musicproduction",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <MusicProduction />,
         },
       ],
     },

@@ -64,7 +64,7 @@ export default function FacePerception() {
               focus on face perception. My supervisor, Deema Awad, had
               introduced me to the gaze cueing effect – our innate tendency to
               detect visual targets quicker if we perceive someone else already
-              looking in their direction. This phenomenon tied in with my
+              looking towards the target. This phenomenon tied in with my
               interest in the evolutionary foundation of our cognition.
               Specifically, I investigated whether facial attractiveness affects
               the gaze cueing effect – a feasible hypothesis, as attractive
