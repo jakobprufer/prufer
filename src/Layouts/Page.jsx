@@ -120,24 +120,24 @@ function Page() {
         {/* <div className="headerFilterBg"></div> */}
         {/* <div className="headerFilter"> */}
         <div className="headerFilter">
-          <div className="headerCont">
-            <Header
-              sortSelect={sortSelect}
-              setSortSelect={setSortSelect}
-              crumbs={crumbs}
-              showAbout={showAbout}
-              setShowAbout={setShowAbout}
-            />
-          </div>
-          <div className="filterCont">
-            <Filter
-              location={location}
-              crumbs={crumbs}
-              sortSelect={sortSelect}
-              setSortSelect={setSortSelect}
-              category={crumbCat}
-            />
-          </div>
+          {/* <div className="headerCont"> */}
+          <Header
+            sortSelect={sortSelect}
+            setSortSelect={setSortSelect}
+            crumbs={crumbs}
+            showAbout={showAbout}
+            setShowAbout={setShowAbout}
+          />
+          {/* </div> */}
+          {/* <div className="filterCont"> */}
+          <Filter
+            location={location}
+            crumbs={crumbs}
+            sortSelect={sortSelect}
+            setSortSelect={setSortSelect}
+            category={crumbCat}
+          />
+          {/* </div> */}
         </div>
         {/* </div> */}
         {/* <div className={`aboutCont ${showAbout ? null : "away"}`}>
