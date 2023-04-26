@@ -182,6 +182,7 @@ export default function JakobPrufer() {
                       currentPlaying={currentPlaying}
                       setCurrentPlaying={setCurrentPlaying}
                       id={"3"}
+                      download
                     />
                   </div>
                   <div className="albumPlayer">
