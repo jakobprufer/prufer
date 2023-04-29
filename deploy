@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+DIR=$(realpath $(dirname "$0"))
+cd "$DIR"
+
+set -o allexport
+source .env
+set +o allexport
+
+echo ""
+echo "==> building container"
+echo ""
+docker build --platform linux/amd64 -t prufer .
+IMAGE="${DOCKER_CR}/prufer/${DOCKER_IMAGE}"
+docker tag prufer:latest ${IMAGE}:latest
+
+echo ""
+echo "==> pushing ${IMAGE} to ${DOCKER_CR}"
+echo ""
+docker login -u="${DOCKER_USER}" -p="${DOCKER_PASS}" "${DOCKER_CR}"
+docker push ${IMAGE}:latest
+
+echo ""
+echo "==> deploying k8s: ${K8S_SERVICE} in namespace ${K8S_NAMESPACE}"
+echo ""
+export KUBECONFIG="$DIR/kubeconfig.yml"
+helm upgrade \
+	--install \
+	-n ${K8S_NAMESPACE} \
+	--set "global.appVersion=latest" \
+	--set "imagePullSecret.registry=https://${DOCKER_CR}" \
+	--set "imagePullSecret.user=${DOCKER_USER}" \
+	--set "imagePullSecret.password=${DOCKER_PASS}" \
+	--set "image.pullPolicy=Always" \
+	--set "image.tag=latest" \
+	--set "image.repository=${IMAGE}" \
+	${K8S_SERVICE} ./deployment/helm/prufer/
+
+exit 0
