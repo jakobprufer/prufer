@@ -8,7 +8,7 @@ DIR=$(realpath $(dirname "$0"))
 cd "$DIR"
 
 set -o allexport
-source .env
+source deploy.env
 set +o allexport
 
 echo ""
