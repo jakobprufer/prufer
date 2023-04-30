@@ -239,8 +239,8 @@
     "cardLayout": "Video",
     "cardGrid": "g1",
     "images": [{"name": "highlightcut", "video": "normal", "description": "Some of my favourite moments form the music video"},{"name": "cover", "video": "auto", "description": "The moving album cover for the song"}],
-    "cardVideo": "cardVideo",
-    "cardThumb": "allescardthumb.png"
+    "cardVideo": "cardvideo",
+    "cardThumb": "allescardthumb.jpg"
   },
   {
     "id": 14,
