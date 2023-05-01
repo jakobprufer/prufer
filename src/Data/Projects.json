@@ -76,7 +76,7 @@
     "title": "London People",
     "cardLayout": "Custom",
     "images": [{"name": "1", "ratio": "c32"},{"name": "2", "ratio": "c32"},{"name": "3", "ratio": "c32"},{"name": "4", "ratio": "c32"},{"name": "5", "ratio": "c32"},{"name": "6", "ratio": "c32"},{"name": "7", "ratio": "c32"},{"name": "8", "ratio": "c32"},{"name": "9", "ratio": "c32"},{"name": "10", "ratio": "c32"},{"name": "11", "ratio": "c32"},{"name": "12", "ratio": "c32"},{"name": "13", "ratio": "c32"},{"name": "14", "ratio": "c32"}],
-    "customImages": [{"name": "cardbg", "cardSize": "m", "styling": "hoverShrink"},{"name": "cardfg", "cardSize": "m", "styling": "hoverScale"}],
+    "customImages": [{"name": "cardbg", "cardSize": "s", "styling": "hoverShrink"},{"name": "cardfg", "cardSize": "s", "styling": "hoverScale"}],
     "cardImages": ["cardbg","cardfg"]
   },
   {
@@ -93,7 +93,7 @@
     "title": "MA UX Blog",
     "cardLayout": "Custom",
     "images": [],
-    "customImages": [{"name": "1", "cardSize": "s", "styling": "hoverScale"},{"name": "2", "cardSize": "s", "styling": "hoverScale drop"},{"name": "3", "cardSize": "s", "styling": "hoverScale"},{"name": "4","cardSize": "s", "styling": "hoverScale drop"},{"name": "5", "cardSize": "s", "styling": "hoverScale"},{"name": "6", "cardSize": "s", "styling": "drop"},{"name": "7","cardSize": "s", "styling": "difference"}],
+    "customImages": [{"name": "1", "cardSize": "xs", "styling": "hoverScale"},{"name": "2", "cardSize": "xs", "styling": "hoverScale drop"},{"name": "3", "cardSize": "xs", "styling": "hoverScale"},{"name": "4","cardSize": "xs", "styling": "hoverScale drop"},{"name": "5", "cardSize": "xs", "styling": "hoverScale"},{"name": "6", "cardSize": "xs", "styling": "drop"},{"name": "7","cardSize": "xs", "styling": "difference"}],
     "cardImages": ["1","2","3","4","5","6","7"],
     "cardBackground": "dirtycream"
   },
@@ -111,7 +111,7 @@
     "title": "CardioGuard UI",
     "cardLayout": "Custom",
     "images": [],
-    "customImages": [{"name": "card1", "cardSize": "s", "styling": "hoverScale"},{"name": "card2", "cardSize": "s", "styling": "hoverScale"},{"name": "card3", "cardSize": "s", "styling": "hoverScale"},{"name": "card4","cardSize": "s", "styling": "hoverScale"},{"name": "card5", "cardSize": "s", "styling": "hoverScale"}],
+    "customImages": [{"name": "card1", "cardSize": "xs", "styling": "hoverScale"},{"name": "card2", "cardSize": "xs", "styling": "hoverScale"},{"name": "card3", "cardSize": "xs", "styling": "hoverScale"},{"name": "card4","cardSize": "xs", "styling": "hoverScale"},{"name": "card5", "cardSize": "xs", "styling": "hoverScale"}],
     "cardImages": ["card1","card2","card3","card4","card5"],
     "cardBackground": "cardioguardcolor",
     "sections": [{"sectionId": "section0", "progressNum": "0", "progressExt": "Test"},{"sectionId": "section1", "progressNum": "1", "progressExt": "Research"},{"sectionId": "section2", "progressNum": "2", "progressExt": "Conceptualization"},{"sectionId": "section3", "progressNum": "3", "progressExt": "Ideation"},{"sectionId": "section4", "progressNum": "4", "progressExt": "User Testing"},{"sectionId": "section5", "progressNum": "5", "progressExt": "Prototype"}]
@@ -130,7 +130,7 @@
     "title": "Pulse Radio Rebrand & Website",
     "cardLayout": "Custom",
     "images": [{"name": "1", "ratio": "c11", "description": "Logo Glitch Variation"},{"name": "liveheader", "video": "auto", "description": "Pulse Live Stream Facebook Header"},{"name": "2", "ratio": "c11", "description": "Cover template for the Pulse mix series"},{"name": "3", "ratio": "c32", "description": "Design guide with fonts, logos and colours"},{"name": "4", "ratio": "c23", "description": "Recent Instagram feed"},{"name": "5", "ratio": "c11", "description": "Logo variation inspired by ECG pulse"},{"name": "6", "ratio": "c32", "description": "Live player and live chat on the Pulse website"},{"name": "7", "ratio": "c32", "description": "Previous pulse designs before the 2019 rebrand"}],
-    "customImages": [{"name": "cardbg", "cardSize": "m"}, {"name": "card1", "cardSize": "s", "styling": "hoverScale"},{"name": "card2", "cardSize": "s", "styling": "hoverScale"},{"name": "card3", "cardSize": "s", "styling": "hoverScale"},{"name": "card4","cardSize": "s", "styling": "hoverScale"},{"name": "card5", "cardSize": "s", "styling": "hoverScale"},{"name": "card6", "cardSize": "s", "styling": "hoverScale"}],
+    "customImages": [{"name": "cardbg", "cardSize": "s"}, {"name": "card1", "cardSize": "xs", "styling": "hoverScale"},{"name": "card2", "cardSize": "xs", "styling": "hoverScale"},{"name": "card3", "cardSize": "xs", "styling": "hoverScale"},{"name": "card4","cardSize": "xs", "styling": "hoverScale"},{"name": "card5", "cardSize": "xs", "styling": "hoverScale"},{"name": "card6", "cardSize": "xs", "styling": "hoverScale"}],
     "cardImages": ["cardbg","card1","card2","card3","card4","card5","card6"],
     "cardBackground": "pulsegrey"
   },
@@ -148,7 +148,7 @@
     "title": "Face Perception Research",
     "cardLayout": "Custom",
     "images": [],
-    "customImages": [{"name": "card1", "cardSize": "s", "styling": "hoverScale"},{"name": "card2", "cardSize": "s", "styling": "hoverScale"},{"name": "card3", "cardSize": "s", "styling": "hoverScale"},{"name": "card4","cardSize": "s", "styling": "hoverScale"},{"name": "card5", "cardSize": "s", "styling": "hoverScale"},{"name": "card6", "cardSize": "s", "styling": "hoverScale"},{"name": "card7", "cardSize": "s", "styling": "hoverScale"},{"name": "card8", "cardSize": "s", "styling": ""},{"name": "card9", "cardSize": "s", "styling": "hoverScale"}],
+    "customImages": [{"name": "card1", "cardSize": "xs", "styling": "hoverScale"},{"name": "card2", "cardSize": "xs", "styling": "hoverScale"},{"name": "card3", "cardSize": "xs", "styling": "hoverScale"},{"name": "card4","cardSize": "xs", "styling": "hoverScale"},{"name": "card5", "cardSize": "xs", "styling": "hoverScale"},{"name": "card6", "cardSize": "xs", "styling": "hoverScale"},{"name": "card7", "cardSize": "xs", "styling": "hoverScale"},{"name": "card8", "cardSize": "xs", "styling": ""},{"name": "card9", "cardSize": "xs", "styling": "hoverScale"}],
     "cardImages": ["card1","card2","card3","card4","card5","card6","card7","card8","card9"],
     "cardBackground": "cardioguardcolor"
   },
@@ -166,7 +166,7 @@
     "title": "Upbound Beat Store Concept",
     "cardLayout": "Custom",
     "images": [{"name": "transition", "ratio": "c11", "description": "Transition from the intro video to the website landing page", "video": "auto"},{"name": "insta", "ratio": "c11", "description": "Template for branded promotional content adapted for Instagram", "video": "auto"},{"name": "3", "description": "Main beat page with filter on the left and cart on the top right"},{"name": "4", "description": "Checkout page on desktop"},{"name": "5", "description": "Contact page"},{"name": "6", "description": "Licensing information page"},{"name": "7", "description": "Mobile beat page"},{"name": "8", "description": "Mobile track detail page"},{"name": "9", "description": "Mobile landing page with Upbound log"}],
-    "customImages": [{"name": "card1", "cardSize": "s", "styling": ""},{"name": "card2", "cardSize": "s", "styling": "hoverScale"},{"name": "card3", "cardSize": "s", "styling": "hoverScale"},{"name": "card4","cardSize": "s", "styling": "hoverScale invert"},{"name": "card5", "cardSize": "s", "styling": "hoverScale"},{"name": "card6", "cardSize": "s", "styling": "hoverScale"},{"name": "card7", "cardSize": "s", "styling": "hoverScale invert"},{"name": "card8", "cardSize": "s", "styling": "hoverScale"},{"name": "card9", "cardSize": "s", "styling": "hoverScale"}],
+    "customImages": [{"name": "card1", "cardSize": "xs", "styling": ""},{"name": "card2", "cardSize": "xs", "styling": "hoverScale"},{"name": "card3", "cardSize": "xs", "styling": "hoverScale"},{"name": "card4","cardSize": "xs", "styling": "hoverScale invert"},{"name": "card5", "cardSize": "xs", "styling": "hoverScale"},{"name": "card6", "cardSize": "xs", "styling": "hoverScale"},{"name": "card7", "cardSize": "xs", "styling": "hoverScale invert"},{"name": "card8", "cardSize": "xs", "styling": "hoverScale"},{"name": "card9", "cardSize": "xs", "styling": "hoverScale"}],
     "cardImages": ["card1","card2","card3","card4","card5","card6","card7","card8","card9"],
     "cardBackground": "cardioguardcolor"
   },
@@ -238,7 +238,7 @@
     "title": "Alles - Music Video",
     "cardLayout": "Video",
     "cardGrid": "g1",
-    "images": [{"name": "highlightcut", "video": "normal", "description": "Some of my favourite moments form the music video"},{"name": "cover", "video": "auto", "description": "The moving album cover for the song"}],
+    "images": [{"name": "highlightcut", "video": "normal", "description": "Some of my favourite moments from the music video"},{"name": "cover", "video": "auto", "description": "The moving album cover for the song"}],
     "cardVideo": "cardvideo",
     "cardThumb": "allescardthumb.jpg"
   },
@@ -257,7 +257,7 @@
     "cardGrid": "g1",
     "images": [],
     "cardVideo": "cardvideo1",
-    "cardThumb": "berlineditcardthumb.png"
+    "cardThumb": "berlineditcardthumb.jpg"
   },
   {
     "id": 15,
@@ -291,7 +291,7 @@
     "cardGrid": "g1",
     "images": [],
     "cardVideo": "cardvideo3",
-    "cardThumb": "off21videocardthumb3.png"
+    "cardThumb": "off21videocardthumb3.jpg"
   },
   {
     "id": 17,
@@ -340,12 +340,11 @@
     "projectId": "off",
     "title": "Off - Warehouse Raves",
     "cardLayout": "Custom",
-    "cardGrid": "g1",
     "images": [],
     "images23": [{ "name": "23a", "description": "Matt Migz serving vinyl DnB in room 2"},{ "name": "23b", "description": "Fairy lights guided guests through the woods - this is the queue in front of the entry gate"},{ "name": "23c", "description": "Into the off"},{ "name": "23d", "description": "Beer pong room before the party"},{ "name": "23e", "description": "Off23 signature wall"},{ "name": "23f", "description": "Room 1 at about 5am with graffiti by Patrik & Yoram"},{ "name": "23g", "description": "Conversation in front of the off light sign"},{ "name": "23h", "video": "auto", "description": "Music-triggered lighting tubes in room 2"},{ "name": "23i", "description": "Power plan for Off23"},{ "name": "23j", "description": "Arrival map for guests"},{ "name": "23k", "description": "Nick01 as MC in room 1"},{ "name": "23l", "description": "Matt Miggz spinning"}],
     "images21": [{ "name": "21a", "description": "Dance floor scenes"},{ "name": "21b", "description": "Patrik working on artworks in the venue"},{ "name": "21c", "description": "Assembling equipment, part owned and part rented"},{ "name": "21d", "description": "Setting up visuals and programming lighting"},{ "name": "21e", "description": "Core team on the night setting up"},{ "name": "21f", "description": "The night before we had already set up tables and scaffolding"},{ "name": "21g", "description": "Entry bands for the crew"},{ "name": "21h", "description": "Starting up"},{ "name": "21i", "description": "People arriving"},{ "name": "21j", "description": "Beer pong - always a central feature in off events"},{ "name": "21k", "description": "Projector and smoke setup"},{ "name": "21l", "description": "Visuals"},{ "name": "21m", "description": "Visuals"},{ "name": "21n", "description": "Visuals"},{ "name": "21o", "description": "Extended the end one hour"}],
     "images20": [{ "name": "20a", "video": "auto", "description": "Security guard at the entrance gate"},{ "name": "20b", "video": "auto", "description": "A deer passing by"},{ "name": "20c", "description": "Map of route through the forest aisle where bikes would also be parked"},{ "name": "20d", "description": "Off20 power plan"},{ "name": "20e", "description": "Scheduling"},{ "name": "20f", "description": "Venue map"},{ "name": "20g", "description": "Crowd arriving"},{ "name": "20h", "description": "Chill area"},{ "name": "20i", "description": "Main dancefloor"},{ "name": "20j", "description": "We still had a relatively basic light setup with led tubes controlled by a dmx interface and activated with a lighting software"}],
-    "customImages": [{ "name": "card1", "cardSize": "m", "styling": "hoverShrink"},{ "name": "card3", "cardSize": "m", "styling": "hoverScale"},{ "name": "card2", "cardSize": "m", "styling": ""}],
+    "customImages": [{ "name": "card1", "cardSize": "m", "styling": "hoverShrink"},{ "name": "card3", "cardSize": "s", "styling": "hoverScale"},{ "name": "card2", "cardSize": "s", "styling": ""}],
     "cardImages": ["card1", "card3", "card2"]
   },
   {

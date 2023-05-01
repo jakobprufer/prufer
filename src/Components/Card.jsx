@@ -12,7 +12,7 @@ export default function Card({ projects }) {
     <AnimatePresence>
       <motion.div layout className={`card`}>
         {projects.cardLayout == "Grid" ? (
-          // Standard Card Layout
+          // Grid Card Layout
           <Link
             className="cardContainer"
             to={`/${projects.cat[0]}/${projects.projectId}`}
@@ -43,7 +43,7 @@ export default function Card({ projects }) {
                         name={image.name}
                         projectId={projects.projectId}
                         ratio={image.ratio}
-                        size={projects.cardGrid.includes("g1") ? "m" : "s"}
+                        size={projects.cardGrid.includes("g1") ? "m" : "xs"}
                       />
                     );
                   })}
@@ -146,7 +146,8 @@ export default function Card({ projects }) {
             </div>
             <div className="cardContent">
               <HoverVideoPlayer
-                videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4#t=0.001`}
+                videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4`}
+                preload="metadata"
                 pausedOverlay={
                   <img
                     src={`/Assets/${projects.projectId}/m/${projects.cardThumb}`}

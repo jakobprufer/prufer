@@ -1,9 +1,11 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, lazy } from "react";
 import { motion, layout, AnimatePresence } from "framer-motion";
-import Card from "../Components/Card";
+// import Card from "../Components/Card";
 import { useOutletContext } from "react-router-dom";
 import Player from "../Components/Player";
 import CustomImg from "../Components/CustomImg";
+
+const Card = lazy(() => import("../Components/Card"));
 
 export default function Overview() {
   //masonry effect - for now deactivated
