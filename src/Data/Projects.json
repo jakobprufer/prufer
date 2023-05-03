@@ -325,8 +325,8 @@
     "cardLayout": "Grid",
     "cardGrid": "g1",
     "images": [],
-    "customImages": [{ "name": "cardimage3", "size": "m", "ratio": "c32", "description": ""}],
-    "cardImages": ["cardimage3"]
+    "customImages": [{ "name": "cardimageopt", "size": "m", "ratio": "c32", "description": ""}],
+    "cardImages": ["cardimageopt"]
   },
   {
     "id": 19,
