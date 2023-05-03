@@ -57,10 +57,15 @@ ingress:
         paths:
           - path: /
             pathType: ImplementationSpecific
+      - host: www.prufer.co
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
     tls:
       - secretName: prufer.co
         hosts:
           - prufer.co
+          - www.prufer.co
 
 
 resources:
