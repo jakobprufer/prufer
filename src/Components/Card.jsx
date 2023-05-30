@@ -11,25 +11,13 @@ export default function Card({ projects }) {
   return (
     <AnimatePresence>
       <motion.div layout className={`card`}>
-        {projects.cardLayout == "Grid" ? (
-          // Grid Card Layout
-          <Link
-            className="cardContainer"
-            to={`/${projects.cat[0]}/${projects.projectId}`}
-          >
-            <div className="cardHead">
-              <div className="smallH">{projects.title}</div>
-              {/* <div className="description">{projects.description}</div> */}
-              <div className="cardData">
-                <span className="cardCategory">{projects.displayedCat}</span>,{" "}
-                <span className="cardYear">
-                  {projects.date.toString().substring(0, 4)}{" "}
-                </span>
-                {projects.displayedTools ? (
-                  <span className="cardTools">({projects.displayedTools})</span>
-                ) : null}
-              </div>
-            </div>
+        <Link
+          className="cardContainer"
+          to={`/${projects.cat[0]}/${projects.projectId}`}
+          ref={hoverVideoRef}
+        >
+          {projects.cardLayout == "Grid" ? (
+            // Grid Card Layout
             <div className="cardContent">
               {projects.cardLayout?.includes("Grid") == true && (
                 <div className={projects.cardGrid}>
@@ -50,26 +38,8 @@ export default function Card({ projects }) {
                 </div>
               )}
             </div>
-          </Link>
-        ) : projects.cardLayout == "Custom" ? (
-          // Custom Card Layout
-          <Link
-            className="cardContainer"
-            to={`/${projects.cat[0]}/${projects.projectId}`}
-          >
-            <div className="cardHead">
-              <div className="smallH">{projects.title}</div>
-              {/* <div className="description">{projects.description}</div> */}
-              <div className="cardData">
-                <span className="cardCategory">{projects.displayedCat}</span>,{" "}
-                <span className="cardYear">
-                  {projects.date.toString().substring(0, 4)}
-                </span>{" "}
-                {projects.displayedTools ? (
-                  <span className="cardTools">({projects.displayedTools})</span>
-                ) : null}
-              </div>
-            </div>
+          ) : projects.cardLayout == "Custom" ? (
+            // Custom Card Layout
             <div
               className={`cardContent ${projects.projectId}${projects.cardLayout}`}
             >
@@ -90,26 +60,8 @@ export default function Card({ projects }) {
                 })}
               </div>
             </div>
-          </Link>
-        ) : projects.cardLayout == "Text" ? (
-          //Text layout
-          <Link
-            className="cardContainer"
-            to={`/${projects.cat[0]}/${projects.projectId}`}
-          >
-            <div className="cardHead">
-              <div className="smallH"></div>
-              {/* <div className="description">{projects.description}</div> */}
-              <div className="cardData">
-                <span className="cardCategory">{projects.displayedCat}</span>,{" "}
-                <span className="cardYear">
-                  {projects.date.toString().substring(0, 4)}
-                </span>{" "}
-                {projects.displayedTools ? (
-                  <span className="cardTools">({projects.displayedTools})</span>
-                ) : null}
-              </div>
-            </div>
+          ) : projects.cardLayout == "Text" ? (
+            //Text layout
             <div className={`cardContent`}>
               <div className={`c32 ${projects.cardBackground}`}>
                 <div className={`textCard ${projects.cardTextColor}`}>
@@ -123,27 +75,8 @@ export default function Card({ projects }) {
                 </div>
               </div>
             </div>
-          </Link>
-        ) : projects.cardLayout == "Video" ? (
-          // Video layout
-          <Link
-            className="cardContainer"
-            ref={hoverVideoRef}
-            to={`/${projects.cat[0]}/${projects.projectId}`}
-          >
-            <div className="cardHead">
-              <div className="smallH">{projects.title}</div>
-              {/* <div className="description">{projects.description}</div> */}
-              <div className="cardData">
-                <span className="cardCategory">{projects.displayedCat}</span>,{" "}
-                <span className="cardYear">
-                  {projects.date.toString().substring(0, 4)}{" "}
-                </span>
-                {projects.displayedTools ? (
-                  <span className="cardTools">({projects.displayedTools})</span>
-                ) : null}
-              </div>
-            </div>
+          ) : projects.cardLayout == "Video" ? (
+            // Video layout
             <div className="cardContent">
               <HoverVideoPlayer
                 videoSrc={`/Assets/${projects.projectId}/${projects.projectId}${projects.cardVideo}.mp4`}
@@ -175,8 +108,21 @@ export default function Card({ projects }) {
                 sizingMode="container"
               />
             </div>
-          </Link>
-        ) : null}
+          ) : null}
+          <div className="cardHead">
+            <div className="smallH">{projects.title}</div>
+            {/* <div className="description">{projects.description}</div> */}
+            <div className="cardData">
+              <span className="cardCategory">{projects.displayedCat}</span>,{" "}
+              <span className="cardYear">
+                {projects.date.toString().substring(0, 4)}{" "}
+              </span>
+              {projects.displayedTools ? (
+                <span className="cardTools">({projects.displayedTools})</span>
+              ) : null}
+            </div>
+          </div>
+        </Link>
       </motion.div>
     </AnimatePresence>
   );

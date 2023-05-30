@@ -209,3 +209,53 @@
 
     font-size: 40pt
     font-weight: 800
+
+//behavioural
+.annotatedSection
+    display: flex
+    gap: 64px
+
+.annotatedImgContOuter
+    width: min(40%, 400px)
+    margin-left: 2vw
+    flex-shrink: 0
+
+    @media (max-width: $layout-breakpoint-mobile)
+        width: 100%
+        margin-left: 0
+
+.annotatedImgCont
+    width: 100%
+    position: relative
+    height: 0
+    margin: 0
+    padding-bottom: 395%
+    background: red
+
+.annotatedImg
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+
+.label
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background: lightgrey
+    // mix-blend-mode: difference
+    // filter: invert(1)
+    position: absolute
+    transform: translate(-50%, -50%)
+    filter: drop-shadow(2px 2px 8px #0000005e)
+
+#lines-container
+    // mix-blend-mode: difference
+    // filter: invert(1)
+    filter: drop-shadow(2px 2px 8px #0000005e)
+    user-select: none
+    pointer-events: none
+
+.annotatedLabels
+    @media (max-width: $layout-breakpoint-mobile)
+        display: none

@@ -4,22 +4,23 @@ import ImageSlide from "../Components/ImageSlide";
 import { Link } from "react-router-dom";
 import ProjectLinks from "../Components/ProjectLinks";
 
-export default function Turntandable() {
+export default function Vourtex() {
   //get current project from data
-  const current = projects.find((obj) => obj.projectId === "turntandable");
+  const current = projects.find((obj) => obj.projectId === "vourtex");
 
   return (
     <div className="project">
       <div className="projectHead">
         <div>
-          <div className="bigH">T&A</div>
+          <div className="bigH">Vourtex</div>
           <p className="bigP">
-            T&A (turnt and able) is a DJ project started by my good friends
-            Evan, Gino, Willi and me 2017 in Berlin. Over the years we’ve played
-            in varying formations out of the four of us in venues such as
-            Corsica Studios (London), The Cause (London) and Panke Culture
-            (Berlin) in addition to private parties, university events and our
-            own <Link to="/dj/off">Off warehouse rave series</Link>.
+            Vourtex is a DJ project started by my friends Evan, Gino, Willi and
+            me 2017 in Berlin. Over the years we’ve played in varying formations
+            out of the four of us in venues such as Corsica Studios (London),
+            ://about blank (Berlin), The Cause (London), Humboldhain (Berlin)
+            and Panke Culture (Berlin) in addition to private parties,
+            university events and our own{" "}
+            <Link to="/dj/off">Off warehouse rave series</Link>.
           </p>
           <p className="bigP">
             Aside from djing, we’ve produced output such as remixes and edits,
@@ -34,10 +35,10 @@ export default function Turntandable() {
             The goal we set for ourselves back in 2017 remains widely unchanged:
             “In combination of sound with visual elements, unique venues and
             environments, dynamic processes, detailed management, and innovative
-            marketing, the T&A crew seeks to provide each attendee with the best
-            possible experience and advance the party/club culture by exploring
-            new means of mixing, producing, and framing music while guiding
-            group energy.”
+            marketing, the Vourtex crew seeks to provide each attendee with the
+            best possible experience and advance the party/club culture by
+            exploring new means of mixing, producing, and framing music while
+            guiding group energy.”
           </p>
           <div className="mtm">
             <ProjectLinks

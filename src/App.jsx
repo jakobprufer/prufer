@@ -27,8 +27,9 @@ import Off21Video from "./Pages/Off21Video";
 import SupasilvaTeaser from "./Pages/SupasilvaTeaser";
 import Sets from "./Pages/Sets";
 import Off from "./Pages/Off";
-import Turntandable from "./Pages/Turntandable";
+import Vourtex from "./Pages/Vourtex";
 import MusicProduction from "./Pages/MusicProduction";
+import Behavioural from "./Pages/Behavioural";
 
 const UXBlog = () => {
   window.location.href = "https://pruferux.com";
@@ -164,6 +165,17 @@ function App() {
       ],
     },
     {
+      path: "/design/behavioural",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <Behavioural />,
+        },
+      ],
+    },
+    {
       path: "/dj",
       element: <Page />,
       errorElement: <Error />,
@@ -197,13 +209,13 @@ function App() {
       ],
     },
     {
-      path: "/dj/turntandable",
+      path: "/dj/vourtex",
       element: <Page />,
       errorElement: <Error />,
       children: [
         {
           path: "",
-          element: <Turntandable />,
+          element: <Vourtex />,
         },
       ],
     },

@@ -167,9 +167,9 @@ export default function Sets() {
                   <span className="bigP"> (2019)</span>
                   <div className="bigP playerDescription">
                     Dark techno showcase with my friends and fellow DJs from the
-                    T&A Crew, Evan, Gino and Willi. We set up a nice vibey set
-                    to record it in a warehouse just outside of Berlin. 1:50 h
-                    total.
+                    Vourtex Crew, Evan, Gino and Willi. We set up a nice vibey
+                    set to record it in a warehouse just outside of Berlin. 1:50
+                    h total.
                   </div>
                 </div>
 
@@ -223,7 +223,7 @@ export default function Sets() {
                   <span className="smallH">T&A Melodic House Showcase</span>
                   <span className="bigP"> (2018)</span>
                   <div className="bigP playerDescription">
-                    Melodic house showcase with Evan from the T&A Crew. The
+                    Melodic house showcase with Evan from the Vourtex Crew. The
                     first half might be my favourite bit of all mixes. 55 mins
                     total.
                   </div>

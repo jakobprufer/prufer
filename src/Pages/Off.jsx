@@ -115,7 +115,7 @@ export default function Off() {
                 celebrate our birthdays each September.
               </p>
               <p className="bigP">
-                With help of our DJ crew <Link to="/dj/turntandable">T&A</Link>{" "}
+                With help of our DJ crew <Link to="/dj/vourtex">Vourtex</Link>{" "}
                 and many of our close friends we created a unique experience
                 that blended the excitement of a rave with the mystery of
                 travelling through the woods to abandoned locations. Our goal
@@ -210,7 +210,7 @@ export default function Off() {
                   <a href="https://www.instagram.com/_romnn/" target="_blank">
                     Romnn
                   </a>{" "}
-                  to the line up next to T&A
+                  to the line up next to Vourtex
                 </li>
               </ul>
             </div>

@@ -12,7 +12,7 @@ export const filter = [
   {
     id: 2,
     route: "design",
-    title: "Design / Dev",
+    title: "Design",
   },
   {
     id: 3,

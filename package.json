@@ -25,6 +25,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
+    "react-use": "^17.4.0",
     "react-use-measure": "^2.1.1",
     "sass": "^1.58.3",
     "web-vitals": "^2.1.0"
