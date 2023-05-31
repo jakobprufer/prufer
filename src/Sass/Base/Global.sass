@@ -51,6 +51,10 @@
     mix-blend-mode: difference
     filter: invert(1)
 
+.mobileOnly
+    @media (min-width: $layout-breakpoint-mobile)
+        display: none
+
 .paddingTop32
     padding-top: 32px
 
@@ -200,6 +204,10 @@
     &.turned
         transform: rotate(180deg)
         transition: 0.2s
+
+.rotate45
+    transform: rotate(180deg)
+    transition: 0.2s
 
 .iconMedium
 

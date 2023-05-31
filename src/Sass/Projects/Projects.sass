@@ -216,7 +216,7 @@
     gap: 64px
 
 .annotatedImgContOuter
-    width: min(40%, 400px)
+    width: 400px
     margin-left: 2vw
     flex-shrink: 0
 
@@ -230,7 +230,6 @@
     height: 0
     margin: 0
     padding-bottom: 395%
-    background: red
 
 .annotatedImg
     position: absolute
@@ -238,7 +237,7 @@
     top: 0
     left: 0
 
-.label
+.labelDesktop
     width: 16px
     height: 16px
     border-radius: 50%
@@ -249,6 +248,31 @@
     transform: translate(-50%, -50%)
     filter: drop-shadow(2px 2px 8px #0000005e)
 
+    @media (max-width: $layout-breakpoint-mobile)
+        display: none
+
+.labelMobile
+    font-size: 24pt
+    color: white
+    // mix-blend-mode: difference
+    // filter: invert(1)
+    position: absolute
+    transform: translate(-50%, -50%)
+    filter: drop-shadow(2px 2px 15px #000000d2)
+    border: 3px solid white
+    border-radius: 50%
+    display: none
+    transition: 0.2s
+
+    @media (max-width: $layout-breakpoint-mobile)
+        display: block
+
+.labelMobileClicked
+    // transform: translate(-50%, -50%) rotate(45deg)
+    // transform-origin: 50% 50%
+    transition: 0.2s
+    color: lightgrey
+
 #lines-container
     // mix-blend-mode: difference
     // filter: invert(1)
@@ -256,6 +280,22 @@
     user-select: none
     pointer-events: none
 
-.annotatedLabels
     @media (max-width: $layout-breakpoint-mobile)
+        display: none
+
+.annotationsCont
+    position: relative
+
+    @media (max-width: $layout-breakpoint-mobile)
+        display: none
+
+.mobileAnnotation
+    width: 90%
+    margin: 0 5%
+    background: white,
+    border: 2px solid black
+    position: absolute
+    padding: 16px
+
+    @media (min-width: $layout-breakpoint-mobile)
         display: none

@@ -1,4 +1,4 @@
-import { Fragment, useEffect, lazy } from "react";
+import { Fragment, useEffect, lazy, Suspense } from "react";
 import { motion, layout, AnimatePresence } from "framer-motion";
 // import Card from "../Components/Card";
 import { useOutletContext } from "react-router-dom";
@@ -51,11 +51,13 @@ export default function Overview() {
 
   return (
     <Fragment>
-      <motion.div layout className="overviewGrid">
-        {sortedData.map((projects) => {
-          return <Card key={projects.id} projects={projects} />;
-        })}
-      </motion.div>
+      <Suspense>
+        <motion.div layout className="overviewGrid">
+          {sortedData.map((projects) => {
+            return <Card key={projects.id} projects={projects} />;
+          })}
+        </motion.div>
+      </Suspense>
     </Fragment>
   );
 }

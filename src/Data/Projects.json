@@ -377,7 +377,7 @@
     "title": "Behavioural Design Case",
     "cardLayout": "Custom",
     "images": [],
-    "customImages": [{ "name": "cardbg", "cardSize": "m", "description": ""},{ "name": "card1", "cardSize": "m", "styling": "hoverScale"}],
+    "customImages": [{ "name": "cardbg", "cardSize": "m", "description": ""},{ "name": "card1", "cardSize": "s", "styling": "hoverScale"}],
     "cardImages": ["cardbg", "card1"]
   }
 ]
