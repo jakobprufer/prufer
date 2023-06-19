@@ -27,7 +27,7 @@ export default function Header({
           href="mailto:jakob@prufer.co"
           className="headerLink headerName pointer"
         >
-          <span>Jakob Prufer</span>
+          <span>Jakob Prüfer</span>
         </a>
         {/* <div
           className="headerLink flipAbout pointer"

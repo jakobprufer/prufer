@@ -217,7 +217,7 @@ export default function Behavioural() {
       </div>
       <div className="projectContent">
         <div className="annotatedSection" ref={sectionRef}>
-          <div className="annotatedImgContOuter mtm">
+          <div className="annotatedImgContOuter mtm marginSpaceBottom">
             <div ref={containerRef}>
               <div className="annotatedImgCont" ref={measureRef}>
                 <img

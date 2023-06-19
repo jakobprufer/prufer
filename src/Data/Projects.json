@@ -195,7 +195,7 @@
     "displayedCat": "Short Essay",
     "date": 202304,
     "dateadded": 202304,
-    "rating": 6,
+    "rating": 5,
     "reach": 2,
     "projectId": "aidesign",
     "title": "Will AI replace the designer?",
@@ -379,5 +379,23 @@
     "images": [],
     "customImages": [{ "name": "cardbg", "cardSize": "m", "description": ""},{ "name": "card1", "cardSize": "s", "styling": "hoverScale"}],
     "cardImages": ["cardbg", "card1"]
+  },
+  {
+    "id": 22,
+    "visibility": "all",
+    "cat": ["writing"],
+    "displayedCat": "Short Essay",
+    "date": 202306,
+    "dateadded": 202306,
+    "rating": 6,
+    "reach": 2,
+    "projectId": "discussingideas",
+    "title": "Discussing Ideas",
+    "subtitle": "6 principles to improve idea integration in teams",
+    "published": "University of the Arts London",
+    "cardLayout": "Text",
+    "images": [],
+    "cardBackground": "cardioguardtransient",
+    "sections": [{"sectionId": "section1", "progressNum": "I", "progressExt": "Intro"},{"sectionId": "section2", "progressNum": "P", "progressExt": "Principles"},{"sectionId": "sectionR", "progressNum": "R", "progressExt": "References"}]
   }
 ]

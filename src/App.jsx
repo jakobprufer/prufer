@@ -30,6 +30,7 @@ import Off from "./Pages/Off";
 import Vourtex from "./Pages/Vourtex";
 import MusicProduction from "./Pages/MusicProduction";
 import Behavioural from "./Pages/Behavioural";
+import DiscussingIdeas from "./Pages/DiscussingIdeas";
 
 const UXBlog = () => {
   window.location.href = "https://pruferux.com";
@@ -337,6 +338,17 @@ function App() {
         {
           path: "",
           element: <Overview />,
+        },
+      ],
+    },
+    {
+      path: "/writing/discussingideas",
+      element: <Page />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "",
+          element: <DiscussingIdeas />,
         },
       ],
     },
