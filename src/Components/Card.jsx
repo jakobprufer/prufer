@@ -110,7 +110,7 @@ export default function Card({ projects }) {
             </div>
           ) : null}
           <div className="cardHead">
-            <div className="smallH">{projects.title}</div>
+            <div className="cardTitle">{projects.title}</div>
             {/* <div className="description">{projects.description}</div> */}
             <div className="cardData">
               <span className="cardCategory">{projects.displayedCat}</span>,{" "}

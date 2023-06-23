@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import projects from "../Data/Projects.json";
+import ProgressiveImage from "react-progressive-graceful-image";
 
 export default function SetImg({ projectId, name, size, ratio, alt }) {
   const projectImages = projects.find((p) => p.projectId === projectId)?.images;
@@ -25,7 +26,23 @@ export default function SetImg({ projectId, name, size, ratio, alt }) {
 
   return imageUrl ? (
     <div className={ratio}>
-      <img src={imageUrl} alt={alt} className="img" />
+      {/* <img src={imageUrl} alt={alt} className="img" /> */}
+      <ProgressiveImage
+        delay={500}
+        src={imageUrl}
+        placeholder={imageUrl}
+        rootMargin="0% 0% 0%"
+        threshold={[1]}
+      >
+        {(src, loading) => (
+          <img
+            src={src}
+            alt="an image"
+            className="img"
+            // style={{ background: loading ? "#F9FAFB" : "none" }}
+          />
+        )}
+      </ProgressiveImage>
     </div>
   ) : null;
 }
